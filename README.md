@@ -1,4 +1,4 @@
-# DevGEO - Landing Page Profesional
+# Carles del Olmo - Landing Page Profesional
 
 Landing page profesional para desarrollador especialista en **Generative Engine Optimization (GEO)**, con diseño dark-tech moderno y efectos glassmorphism.
 
@@ -70,7 +70,7 @@ Proyecto personal - Todos los derechos reservados.
 
 **Carles del Olmo**  
 Especialista en Generative Engine Optimization
-[LinkedIn](https://www.linkedin.com/in/carles-del-olmo/) | [Web](https://devgeo.es)
+[LinkedIn](https://www.linkedin.com/in/delolmocarles/) | [Web](https://.....es)
 
 ---
 
