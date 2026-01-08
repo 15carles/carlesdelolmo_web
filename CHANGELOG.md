@@ -20,3 +20,4 @@ Todos los cambios notables en este proyecto serán documentados en este archivo.
 ### Corregido
 - Alineación vertical del contenido en la columna derecha del Hero.
 - Visibilidad de bordes en animaciones de fondo mediante zoom SVG selectivo.
+- **Bug de fondo en cabeceras**: Eliminación de degradados conflictivos en `.page-header` y ajuste de espaciados para asegurar consistencia visual con la página de inicio.
