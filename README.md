@@ -13,6 +13,7 @@ Landing page profesional para desarrollador especialista en **Generative Engine 
 - ✅ **Glassmorphism**: Componentes con desenfoque de fondo y bordes translúcidos.
 - ✅ **Accesibilidad**: Etiquetas ARIA y navegación completa por teclado.
 - ✅ **Plantilla de Casos de Éxito**: Estructura reutilizable para documentar proyectos de GEO/SEO.
+- ✅ **Caso de Estudio LEDescaparate**: Ejemplo real de visibilidad del 74% en IA con métricas Lighthouse 100/100.
 
 ## 📁 Estructura del Proyecto
 
@@ -74,5 +75,5 @@ Especialista en Generative Engine Optimization
 
 ---
 
-**Versión**: 1.0.0  
-**Última actualización**: Enero 2026
+**Versión**: 1.1.0  
+**Última actualización**: 18 Enero 2026 (Refactorización Integral de Caso de Estudio y Schema)

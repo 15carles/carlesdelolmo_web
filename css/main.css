@@ -221,6 +221,10 @@ a {
     gap: var(--spacing-lg);
 }
 
+.gap-xl {
+    gap: var(--spacing-xl);
+}
+
 /* ============================================
    UTILIDADES DE TEXTO
    ============================================ */
@@ -244,6 +248,10 @@ a {
     color: transparent;
 }
 
+.list-inside {
+    list-style-position: inside;
+}
+
 /* ============================================
    UTILIDADES DE ESPACIADO
    ============================================ */
@@ -256,11 +264,11 @@ a {
 }
 
 .mb-lg {
-    margin-bottom: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg) !important;
 }
 
 .mb-xl {
-    margin-bottom: var(--spacing-xl);
+    margin-bottom: var(--spacing-xl) !important;
 }
 
 .mb-2xl {
@@ -281,6 +289,18 @@ a {
 
 .mt-xl {
     margin-top: var(--spacing-xl);
+}
+
+.pt-sm {
+    padding-top: var(--spacing-sm) !important;
+}
+
+.pt-md {
+    padding-top: var(--spacing-md) !important;
+}
+
+.pt-xl {
+    padding-top: var(--spacing-xl);
 }
 
 .py-sm {
@@ -311,6 +331,13 @@ a {
 .px-lg {
     padding-left: var(--spacing-lg);
     padding-right: var(--spacing-lg);
+}
+
+/* ============================================
+   UTILIDADES DE BORDE
+   ============================================ */
+.border-t {
+    border-top: 1px solid var(--color-border);
 }
 
 /* ============================================

@@ -1,6 +1,43 @@
 # Changelog
 
 Todos los cambios notables en este proyecto serán documentados en este archivo.
+## [1.1.0] - 18-01-2026
+
+### Añadido
+- **Schema Avanzado**: Implementación de JSON-LD para `Service` y `Review` en el caso de estudio.
+- **Utilidades CSS**: Nuevas clases de espaciado (`.mb-xl`, `.pt-sm`) y bordes (`.border-t`) en `main.css`.
+
+### Cambiado
+- **Refactorización Integral (Section 3)**: Nuevo diseño de "3 Pilares" para la sección de Contexto, mejorando la legibilidad con un grid de 3 columnas.
+- **Espaciado (Section 4)**: Ajuste vertical correctivo en tarjetas de Diagnóstico mediante utilidades `!important` para forzar el centrado visual.
+- **Arquitectura CSS**: Reordenamiento de imports en `proyecto-ledescaparate.html` para garantizar la especificidad de las utilidades sobre los componentes.
+- **Unificación UI**: Estandarización de `section-header` y títulos de tarjetas en todas las secciones.
+## [1.3.1] - 18-01-2026
+
+### Añadido
+- **Reingeniería de Chat**: Interfaz de mensajería moderna con alineación diferenciada y lógica de IA generativa visualmente optimizada.
+- **Testimonio Premium**: Refinamiento estético de la tarjeta "Mención de Honor" con glassmorphism profundo y jerarquía tipográfica corregida.
+
+## [1.3.0] - 18-01-2026
+
+### Añadido
+- **Autoridad GEO**: Integración de Badge SIR (62%) con diseño glassmorphism en la terminal de IA.
+- **Automatización**: Nueva sección "Gestión Inteligente de la Autoridad" detallando flujos de leads y monitorización de SEO Local autónomo.
+- **Testimonio Premium**: Rediseño completo de la sección de testimonios ("Mención de Honor") con estética corporativa, logo integrado y tipografía refinada.
+
+### Cambiado
+- **Refactorización Técnica**: Actualización del copy de rendimiento (LCP) a un tono de alta consultoría técnica.
+
+## [1.2.0] - 18-01-2026
+
+### Añadido
+- **Caso de Estudio**: Transformación completa de `proyecto-ledescaparate.html` en un caso de éxito real enfocado en la autoridad en IA.
+- **Componentes UI**: Implementación de Anillos PageSpeed (Lighthouse style) y Terminal de IA (Efecto Hook) en `components.css`.
+- **Contenido**: Estructura de 7 secciones con narrativa de "Arquitectura de Entidades" y testimonios reales.
+
+### Corregido
+- **Bug de Anillos PageSpeed**: Se han corregido las dimensiones de los SVGs y el color de relleno del círculo para evitar que cubrieran toda la pantalla.
+- **Enlace de Inicio**: El proyecto LEDescaparate en `index.html` ahora apunta correctamente al nuevo caso de estudio.
 
 ## [1.0.0] - 08-01-2026
 
