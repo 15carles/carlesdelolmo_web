@@ -1,8 +1,20 @@
 # Changelog
 
 Todos los cambios notables en este proyecto serán documentados en este archivo.
-## [1.1.0] - 18-01-2026
 
+## [1.2.0] - 18-01-2026
+
+### Añadido
+- **Sección de Servicios Profesionalizada**: Reestructuración completa con nuevo enfoque en "Soluciones de Autoridad Digital".
+- **Ecosistema Digital Pro**: Servicio destacado con diseño premium y tags de autoridad técnica (SIR 62%, Arquitectura de Entidades, Escalabilidad Total).
+- **Tres Pilares Técnicos**: Arquitectura Performance-First, Visibilidad Local y Generativa, e Ingeniería de Flujos y Agentes IA.
+- **Footer de Sección**: Hook de cierre con mensaje de autoridad y credibilidad técnica.
+
+### Cambiado
+- **Componentes CSS**: Nuevas clases `.service-card--featured`, `.service-card__tags`, `.service-card__tag` y `.services-footer` en `components.css`.
+- **Copy Estratégico**: Textos orientados a alto valor técnico y estratégico, destacando métricas reales y tecnologías específicas.
+
+## [1.1.0] - 18-01-2026
 ### Añadido
 - **Schema Avanzado**: Implementación de JSON-LD para `Service` y `Review` en el caso de estudio.
 - **Utilidades CSS**: Nuevas clases de espaciado (`.mb-xl`, `.pt-sm`) y bordes (`.border-t`) en `main.css`.
