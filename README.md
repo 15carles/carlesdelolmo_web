@@ -75,5 +75,5 @@ Especialista en Generative Engine Optimization
 
 ---
 
-**Versión**: 1.1.0  
-**Última actualización**: 18 Enero 2026 (Refactorización Integral de Caso de Estudio y Schema)
+**Versión**: 1.2.0  
+**Última actualización**: 18 Enero 2026 (Profesionalización Sección Servicios)
