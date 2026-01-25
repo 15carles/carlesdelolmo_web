@@ -255,6 +255,10 @@ a {
 /* ============================================
    UTILIDADES DE ESPACIADO
    ============================================ */
+.mb-0 {
+    margin-bottom: 0 !important;
+}
+
 .mb-sm {
     margin-bottom: var(--spacing-sm);
 }
@@ -317,6 +321,16 @@ a {
     padding-top: var(--spacing-lg);
     padding-bottom: var(--spacing-lg);
 }
+
+.py-xl {
+    padding-top: var(--spacing-xl);
+    padding-bottom: var(--spacing-xl);
+}
+
+.pb-xl {
+    padding-bottom: var(--spacing-xl);
+}
+
 
 .px-sm {
     padding-left: var(--spacing-sm);

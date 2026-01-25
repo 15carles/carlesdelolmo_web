@@ -274,6 +274,19 @@
     margin-top: var(--spacing-xs);
 }
 
+.stat__value--solid {
+    background: none;
+    -webkit-text-fill-color: initial;
+    color: var(--color-text-primary);
+    margin-bottom: 0;
+    line-height: 1.1;
+    font-size: 1.5rem;
+}
+
+.stat__value--highlight {
+    font-size: 2.5rem;
+}
+
 /* ============================================
    TERMINAL DE CÓDIGO
    ============================================ */
@@ -363,6 +376,7 @@
         font-size: 0.75rem;
     }
 }
+
 
 /* ============================================
    CHAT DE IA (Burbujas modernas)
