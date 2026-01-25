@@ -896,7 +896,6 @@
    ESTADO DE NAVBAR AL HACER SCROLL
    ============================================ */
 .navbar--scrolled {
-    background-color: rgba(10, 14, 26, 0.95);
     box-shadow: var(--shadow-md);
 }
 
