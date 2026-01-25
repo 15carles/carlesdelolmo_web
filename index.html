@@ -21,6 +21,14 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/components.css">
+
+    <!-- Theme Toggle Script (inline to prevent FOUC) -->
+    <script>
+        (function () {
+            const theme = localStorage.getItem('theme') || 'light';
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
 </head>
 
 <body>
@@ -40,6 +48,20 @@
                 <a href="#servicios" class="navbar__link">Servicios</a>
                 <a href="insights.html" class="navbar__link">Insights</a>
                 <a href="#contacto" class="navbar__link">Contacto</a>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema" title="Cambiar tema">
+                    <svg class="theme-toggle__icon theme-toggle__icon--sun" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z">
+                        </path>
+                    </svg>
+                    <svg class="theme-toggle__icon theme-toggle__icon--moon" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24" aria-hidden="true" style="display: none;">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z">
+                        </path>
+                    </svg>
+                </button>
                 <a href="#contacto" class="btn btn--primary">Hablemos</a>
             </div>
 
@@ -60,6 +82,21 @@
             <a href="#servicios" class="navbar__link">Servicios</a>
             <a href="insights.html" class="navbar__link">Insights</a>
             <a href="#contacto" class="navbar__link">Contacto</a>
+            <button id="theme-toggle-mobile" class="theme-toggle" aria-label="Cambiar tema" title="Cambiar tema"
+                style="margin: var(--spacing-sm) 0;">
+                <svg class="theme-toggle__icon theme-toggle__icon--sun" fill="none" stroke="currentColor"
+                    viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z">
+                    </path>
+                </svg>
+                <svg class="theme-toggle__icon theme-toggle__icon--moon" fill="none" stroke="currentColor"
+                    viewBox="0 0 24 24" aria-hidden="true" style="display: none;">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z">
+                    </path>
+                </svg>
+            </button>
             <a href="#contacto" class="btn btn--primary btn--block">Hablemos</a>
         </div>
     </nav>
@@ -480,23 +517,12 @@
         </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer class="footer no-print">
-        <div class="container footer__container">
-            <!-- Copyright -->
-            <p class="footer__text">
-                © 2026 Carles del Olmo. Especialista en Generative Engine Optimization y Desarrollo Web.
-            </p>
-
-            <!-- Links -->
-            <nav class="footer__links" aria-label="Enlaces legales">
-                <a href="#" class="footer__link">Privacidad</a>
-                <a href="#" class="footer__link">Términos</a>
-            </nav>
-        </div>
-    </footer>
+    <!-- FOOTER (Loaded dynamically) -->
+    <div data-component="footer"></div>
 
     <!-- Scripts -->
+    <script src="js/components.js"></script>
+    <script src="js/theme-toggle.js"></script>
     <script src="js/main.js"></script>
     <script src="js/form.js"></script>
 
