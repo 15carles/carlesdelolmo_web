@@ -768,8 +768,9 @@
    ============================================ */
 .footer {
     border-top: 1px solid var(--color-border);
-    background-color: rgba(10, 14, 26, 0.5);
-    backdrop-filter: blur(var(--blur-sm));
+    backdrop-filter: blur(var(--blur-md));
+    background-color: var(--color-bg-card);
+    transition: background-color var(--transition-normal), border-color var(--transition-normal);
 }
 
 .footer__container {
