@@ -13,6 +13,9 @@ Landing page profesional para desarrollador especialista en **Generative Engine 
 - ✅ **Glassmorphism**: Componentes con desenfoque de fondo y bordes translúcidos.
 - ✅ **Accesibilidad**: Etiquetas ARIA y navegación completa por teclado.
 - ✅ **Plantilla de Casos de Éxito**: Estructura reutilizable para documentar proyectos de GEO/SEO.
+- ✅ **Componentes Modulares**: Arquitectura JS para carga dinámica de elementos repetitivos (Footer, Navbar).
+- ✅ **Modo Claro / Oscuro**: Sistema de temas dual con persistencia automática y diseño adaptativo.
+- ✅ **Glassmorphism Theme-Aware**: Efectos de cristal que se adaptan al modo de color seleccionado.
 - ✅ **Caso de Estudio LEDescaparate**: Ejemplo real de visibilidad del 74% en IA con métricas Lighthouse 100/100.
 
 ## 📁 Estructura del Proyecto
@@ -27,7 +30,11 @@ Portfolio_GEO/
 │   └── shared.css         # Estilos compartidos para páginas internas
 ├── js/
 │   ├── main.js           # Lógica principal (menú, scroll, animaciones de scroll)
+│   ├── theme-toggle.js   # Gestión de modo claro/oscuro
+│   ├── components.js     # Cargador de componentes modulares
 │   └── form.js           # Validación y manejo de formulario de contacto
+├── components/           # Fragmentos HTML reutilizables
+│   └── footer.html       # Footer modularizado
 ├── CHANGELOG.md            # Historial de cambios
 ├── VERSION                 # Versión actual del proyecto
 └── README.md               # Documentación principal
@@ -59,7 +66,7 @@ No requiere compilación. Simplemente clona el repositorio y abre `index.html`.
 ## 🔧 Próximas Mejoras
 
 - [ ] Integración con backend real para envío de emails.
-- [ ] Implementación de modo claro (opcional).
+- [x] Implementación de modo claro (Done v2.0.0).
 - [ ] Soporte para multi-idioma (i18n).
 - [ ] Optimización de assets (WebP) y PWA.
 
@@ -75,5 +82,5 @@ Especialista en Generative Engine Optimization
 
 ---
 
-**Versión**: 1.2.0  
-**Última actualización**: 18 Enero 2026 (Profesionalización Sección Servicios)
+**Versión**: 2.0.0  
+**Última actualización**: 26 Enero 2026 (Light Mode & Modularización)

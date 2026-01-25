@@ -2,6 +2,22 @@
 
 Todos los cambios notables en este proyecto serán documentados en este archivo.
 
+## [2.0.0] - 26-01-2026
+
+### Mayor
+- **Sistema de Temas Dual**: Implementación completa de Modo Claro (inspirado en macOS) como tema predeterminado y Modo Oscuro como alternativo.
+- **Toggle de Tema**: Funcionalidad de cambio de tema con persistencia de preferencia y animaciones suaves.
+- **Modularización**: Arquitectura de componentes dinámicos empezando por el Footer, eliminando duplicidad de código.
+
+### Añadido
+- **Glassmorphism Theme-Aware**: Nuevo sistema de fondos semi-transparentes y desenfoques que se adapta dinámicamente al tema claro y oscuro.
+- **Footer Rediseñado**: Nueva estructura vertical centrada (Nav arriba, Copyright abajo) optimizada para todos los dispositivos.
+- **Animaciones UI**: Transiciones suaves de color y fondo en todo el sitio al cambiar de tema.
+
+### Corregido
+- **Navbar Scroll**: Solucionado conflicto de estilos que oscurecía el navbar al hacer scroll en modo claro.
+- **Visibilidad Footer**: Resuelto problema de carga de componentes dinámicos ajustando estilos base como fallback.
+
 ## [1.2.0] - 18-01-2026
 
 ### Añadido
