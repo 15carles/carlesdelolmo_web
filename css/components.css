@@ -777,7 +777,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     gap: var(--spacing-md);
     padding: var(--spacing-lg) var(--spacing-md);
 }
@@ -803,13 +803,14 @@
     color: var(--color-text-primary);
 }
 
+/* Responsive: mantener centrado en todas las resoluciones */
 @media (min-width: 768px) {
     .footer__container {
-        flex-direction: row;
+        flex-direction: column;
     }
 
     .footer__text {
-        text-align: left;
+        text-align: center;
     }
 }
 
@@ -897,6 +898,7 @@
    ============================================ */
 .navbar--scrolled {
     box-shadow: var(--shadow-md);
+    opacity: 98%;
 }
 
 /* ============================================
