@@ -2,6 +2,17 @@
 
 Todos los cambios notables en este proyecto serán documentados en este archivo.
 
+## [2.1.0] - 26-01-2026
+
+### Estructural
+- **Reorganización de Archivos**: Migración de páginas a carpetas raíz (`blog/`, `proyectos/`) para una estructura más lógica y limpia.
+- **Rutas Relativas**: Actualización masiva de enlaces e imports (CSS/JS) para soportar la nueva anidación utilizando rutas relativas dinámicas.
+
+### Modularización
+- **Navbar Componente**: Extracción del menú de navegación a `components/navbar.html`.
+- **Carga Inteligente**: `components.js` ahora detecta automáticamente si se ejecuta desde una subcarpeta y corrige los enlaces del navbar al vuelo.
+- **Globalización JS**: Refactorización de `main.js` para exponer `window.DevGEO`, permitiendo reinicializar eventos (menú móvil, scroll) tras la carga dinámica de componentes.
+
 ## [2.0.0] - 26-01-2026
 
 ### Mayor

@@ -195,11 +195,17 @@ const Utils = {
 };
 
 // ============================================
-// INICIALIZACIÓN
+// INICIALIZACIÓN GLOBAL
 // ============================================
-const App = {
+window.DevGEO = {
+    MobileMenu,
+    SmoothScroll,
+    NavbarScroll,
+    AnimateOnScroll,
+    Utils,
+
     init() {
-        // Esperar a que el DOM esté listo
+        // Init modules if DOM is ready, otherwise wait
         if (document.readyState === 'loading') {
             document.addEventListener('DOMContentLoaded', () => this.initModules());
         } else {
@@ -209,22 +215,30 @@ const App = {
 
     initModules() {
         console.log('🚀 DevGEO initialized');
+        this.MobileMenu.init();
+        this.SmoothScroll.init();
+        this.NavbarScroll.init();
+        this.AnimateOnScroll.init();
 
-        // Inicializar todos los módulos
-        MobileMenu.init();
-        SmoothScroll.init();
-        NavbarScroll.init();
-        AnimateOnScroll.init();
-
-        // Añadir clase loaded al body para animaciones CSS
         document.body.classList.add('loaded');
+    },
+
+    // Method to re-initialize navbar-dependent modules
+    reInitNavbar() {
+        console.log('🔄 Re-initializing Navbar modules');
+        this.MobileMenu.init();
+        this.NavbarScroll.init();
+        this.SmoothScroll.init();
+
+        // Re-init theme toggle if present (it's inline in index but might need checking)
+        if (window.initThemeToggle) window.initThemeToggle();
     }
 };
 
-// Iniciar la aplicación
-App.init();
+// Start App
+window.DevGEO.init();
 
-// Exportar para uso potencial en otros scripts
+// Expert for compatibility
 if (typeof module !== 'undefined' && module.exports) {
-    module.exports = { MobileMenu, SmoothScroll, NavbarScroll, AnimateOnScroll, Utils };
+    module.exports = window.DevGEO;
 }
