@@ -83,5 +83,5 @@ Especialista en Generative Engine Optimization
 
 ---
 
-**Versión**: 2.3.0  
-**Última actualización**: 02 Febrero 2026 (Refactorización de Tema & Sincronización)
+**Versión**: 2.3.3  
+**Última actualización**: 02 Febrero 2026 (Suavizado Degradados Botones Modo Claro)

@@ -2,6 +2,25 @@
 
 Todos los cambios notables en este proyecto serán documentados en este archivo.
 
+## [2.3.3] - 02-02-2026
+
+### Diseño y UI
+- **Botones (Suavizado)**: Ajuste del degradado en modo claro a tonos más suaves (#a78bfa -> #60a5fa) para una estética más difuminada y premium.
+
+## [2.3.2] - 02-02-2026
+
+### Diseño y UI
+- **Botones (Optimización)**: Nuevos gradientes diferenciados por tema.
+    - **Modo Claro**: Gradiente vibrante (Morado -> Cian -> Azul) con texto blanco para máxima legibilidad.
+    - **Modo Oscuro**: Gradiente profundo (Morado -> Azul Oscuro) para integración nocturna.
+- **Variables CSS**: Introducción de `--color-text-btn` para control específico del color de texto en botones.
+
+## [2.3.1] - 02-02-2026
+
+### Diseño y UI
+- **Glassmorphism (Modo Claro)**: Ajuste de opacidad en tarjetas (`rgba(255, 255, 255, 0.25)`) para habilitar el efecto de desenfoque real.
+- **Contraste de Fondo**: Aumento de opacidad en ondas SVG (`0.10`) para mejorar la visibilidad y vibrancia en modo claro.
+
 ## [2.3.0] - 02-02-2026
 
 ### Refactorización Mayor

@@ -127,7 +127,7 @@
 
 .btn--primary {
     background: var(--gradient-button);
-    color: var(--color-text-primary);
+    color: var(--color-text-btn);
 }
 
 .btn--primary:hover {
