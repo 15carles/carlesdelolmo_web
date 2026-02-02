@@ -2,6 +2,19 @@
 
 Todos los cambios notables en este proyecto serán documentados en este archivo.
 
+## [2.3.5] - 02-02-2026
+
+### Diseño y UI
+- **Layout Móvil (Compactación)**: Reducción significativa de espaciados verticales en Hero, Secciones y Tarjetas para maximizar la densidad de información en pantallas pequeñas.
+- **Tipografía**: Ajuste de la escala tipográfica (`h1`, `p`) en móvil para evitar ocupación excesiva de pantalla.
+- **Micro-ajustes**: Reducción de `padding` en tarjetas y contenedores para eliminar "aire" innecesario en visión móvil.
+
+## [2.3.4] - 02-02-2026
+
+### Diseño y UI
+- **Botones Secundarios (Mejora)**: Optimización del contraste y visibilidad en modo claro con bordes sutiles y estados hover más perceptibles.
+- **Transiciones**: Unificación de transiciones suaves (`all 0.3s ease`) en botones secundarios para una experiencia de usuario premium.
+
 ## [2.3.3] - 02-02-2026
 
 ### Diseño y UI

@@ -26,6 +26,11 @@
     --gradient-primary: linear-gradient(135deg, #5a67d8 0%, #6b46c1 50%, #0891b2 100%);
     --gradient-button: linear-gradient(135deg, #a78bfa 0%, #60a5fa 100%);
     --color-text-btn: #ffffff;
+    --color-btn-sec-bg: #f9fafb;
+    --color-btn-sec-border: #e5e7eb;
+    --color-btn-sec-hover-bg: #f3f4f6;
+    --color-btn-sec-hover-border: #d1d5db;
+    --shadow-btn-sec-hover: 0 2px 4px rgba(0, 0, 0, 0.05);
     --gradient-bg: linear-gradient(to bottom right, #e2e8f0, #f8fafc, #e2e8f0);
 
     /* Colores de Acento */
@@ -89,6 +94,11 @@
     --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #06b6d4 100%);
     --gradient-button: linear-gradient(160deg, #581c87 0%, #1e3a8a 100%);
     --color-text-btn: #ffffff;
+    --color-btn-sec-bg: transparent;
+    --color-btn-sec-border: rgba(255, 255, 255, 0.2);
+    --color-btn-sec-hover-bg: transparent;
+    --color-btn-sec-hover-border: rgba(255, 255, 255, 0.4);
+    --shadow-btn-sec-hover: none;
     --gradient-bg: linear-gradient(to bottom right, #0a0e1a, #1e293b, #0f172a);
 
     /* Colores de Acento */
@@ -156,7 +166,8 @@ h6 {
 }
 
 h1 {
-    font-size: clamp(2.5rem, 5vw, 3.9rem);
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    letter-spacing: -0.02em;
 }
 
 h2 {
@@ -188,7 +199,7 @@ a {
 }
 
 .section {
-    padding: var(--spacing-2xl) 0;
+    padding: var(--spacing-xl) 0;
 }
 
 /* ============================================
@@ -209,7 +220,7 @@ a {
 /* Tablet: 768px+ */
 @media (min-width: 768px) {
     .section {
-        padding: var(--spacing-3xl) 0;
+        padding: var(--spacing-2xl) 0;
     }
 
     .grid-cols-2 {

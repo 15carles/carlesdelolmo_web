@@ -23,7 +23,7 @@
    ENCABEZADO DE PÁGINA
    ============================================ */
 .page-header {
-    padding: var(--spacing-3xl) 0 var(--spacing-2xl);
+    padding: var(--spacing-2xl) 0 var(--spacing-xl);
     text-align: center;
 }
 
@@ -302,7 +302,7 @@
 }
 
 .page-header {
-    padding: var(--spacing-2xl) 0 var(--spacing-lg);
+    padding: var(--spacing-xl) 0 var(--spacing-md);
 }
 
 .page-header__meta {
