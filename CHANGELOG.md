@@ -2,6 +2,29 @@
 
 Todos los cambios notables en este proyecto serán documentados en este archivo.
 
+## [2.3.8] - 02-02-2026
+
+### Diseño y UI
+- **Legibilidad Tags (Modo Claro)**: Ajuste de colores en las etiquetas (`badges`) para el tema claro. Se ha invertido la lógica de contraste, utilizando fondos pastel muy suaves y textos oscuros saturados para garantizar la lectura sin perder la identidad de color.
+
+## [2.3.7] - 02-02-2026
+
+### Diseño y UI
+- **Rediseño Radical Chat (Modo Claro)**: Transformación visual completa de la simulación de chat para parecer una app nativa premium.
+    - **User**: Burbuja "Glass" sólida (100% opacidad) con gradiente de marca, sombra de elevación y borde "bocadillo" asimétrico.
+    - **IA**: Efecto "Frost" mejorado (Blanco 85%, Blur 15px) para máxima legibilidad sin perder el contexto del fondo.
+    - **Layout**: Aumento del espaciado entre mensajes para mejorar la jerarquía visual de la conversación.
+
+### Corregido
+- **Soporte de Temas**: Se inyectaron los scripts `theme-toggle.js` y el script inline de prevención FOUC en `ledescaparate.html` y `plantilla-proyecto.html` para habilitar el cambio de modo claro/oscuro que faltaba.
+
+## [2.3.6] - 02-02-2026
+
+### Diseño y UI
+- **Simulación Chat (Modo Claro)**: Mejora de contraste y legibilidad en las burbujas de diálogo.
+    - **Usuario**: Aplicación de gradiente de marca (`var(--gradient-button)`) con opacidad optimizada (`0.9`) y texto blanco.
+    - **IA**: Fondo blanco translúcido (`rgba(255, 255, 255, 0.4)`) con borde sutil para destacar sobre el fondo claro.
+
 ## [2.3.5] - 02-02-2026
 
 ### Diseño y UI

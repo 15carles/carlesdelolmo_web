@@ -83,5 +83,5 @@ Especialista en Generative Engine Optimization
 
 ---
 
-**Versión**: 2.3.5
-**Última actualización**: 02 Febrero 2026 (Optimización Layout Móvil)
+**Versión**: 2.3.8
+**Última actualización**: 02 Febrero 2026 (Legibilidad Tags)

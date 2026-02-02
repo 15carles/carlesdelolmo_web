@@ -14,6 +14,14 @@
     <link rel="stylesheet" href="../assets/css/main.css">
     <link rel="stylesheet" href="../assets/css/components.css">
     <link rel="stylesheet" href="../assets/css/shared.css">
+
+    <!-- Theme Toggle Script (inline to prevent FOUC) -->
+    <script>
+        (function () {
+            const theme = localStorage.getItem('theme') || 'light';
+            document.documentElement.setAttribute('data-theme', theme);
+        })();
+    </script>
 </head>
 
 <body class="page">
@@ -243,6 +251,7 @@
 
     <!-- Scripts -->
     <script src="../assets/js/components.js"></script>
+    <script src="../assets/js/theme-toggle.js"></script>
     <script src="../assets/js/main.js"></script>
     <script src="../assets/js/form.js"></script>
 
