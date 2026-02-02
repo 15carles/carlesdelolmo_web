@@ -181,19 +181,12 @@ a {
    ============================================ */
 .container {
     width: 100%;
-    max-width: 1280px;
     margin: 0 auto;
     padding: 0 var(--spacing-md);
 }
 
 .section {
-    padding: var(--spacing-3xl) 0;
-}
-
-@media (max-width: 768px) {
-    .section {
-        padding: var(--spacing-2xl) 0;
-    }
+    padding: var(--spacing-2xl) 0;
 }
 
 /* ============================================
@@ -204,29 +197,39 @@ a {
     gap: var(--spacing-lg);
 }
 
-.grid-cols-1 {
+/* Por defecto: 1 columna (móvil) */
+.grid-cols-1,
+.grid-cols-2,
+.grid-cols-3 {
     grid-template-columns: repeat(1, 1fr);
 }
 
-.grid-cols-2 {
-    grid-template-columns: repeat(2, 1fr);
-}
+/* Tablet: 768px+ */
+@media (min-width: 768px) {
+    .section {
+        padding: var(--spacing-3xl) 0;
+    }
 
-.grid-cols-3 {
-    grid-template-columns: repeat(3, 1fr);
-}
+    .grid-cols-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
-@media (max-width: 1024px) {
     .grid-cols-3 {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
-@media (max-width: 768px) {
-
-    .grid-cols-2,
+/* Desktop: 1024px+ */
+@media (min-width: 1024px) {
     .grid-cols-3 {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Pantallas grandes: 1280px+ */
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1280px;
     }
 }
 
@@ -401,21 +404,23 @@ a {
 /* ============================================
    UTILIDADES RESPONSIVE
    ============================================ */
+/* Por defecto (móvil): mostrar contenido desktop oculto */
 .hidden-mobile {
-    display: block;
-}
-
-.hidden-desktop {
     display: none;
 }
 
-@media (max-width: 768px) {
+.hidden-desktop {
+    display: block;
+}
+
+/* Desktop: 768px+ */
+@media (min-width: 768px) {
     .hidden-mobile {
-        display: none;
+        display: block;
     }
 
     .hidden-desktop {
-        display: block;
+        display: none;
     }
 }
 
@@ -507,6 +512,7 @@ textarea:focus-visible {
 /* ============================================
    AJUSTES SECCIÓN HERO
    ============================================ */
+/* Desktop: 769px+ */
 @media (min-width: 769px) {
     .hero-right-col {
         padding-left: var(--spacing-3xl);

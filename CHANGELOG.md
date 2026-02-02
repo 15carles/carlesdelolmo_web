@@ -2,6 +2,25 @@
 
 Todos los cambios notables en este proyecto serán documentados en este archivo.
 
+## [2.3.0] - 02-02-2026
+
+### Refactorización Mayor
+- **Arquitectura Mobile-First**: Migración completa de todos los archivos CSS (`main.css`, `shared.css`, `components.css`) a arquitectura mobile-first.
+- **Media Queries**: Eliminación de todas las media queries `max-width` en favor de `min-width` para una progresión lógica de estilos desde móvil hacia desktop.
+- **Navbar Responsive**: Refactorización del menú de navegación con lógica invertida: menú hamburguesa como base (móvil) y navegación horizontal activada desde `min-width: 1024px`.
+- **Componentes Optimizados**: Todos los componentes (Stats, Terminal, Footer, Notificaciones, PageSpeed, Testimonial) ahora siguen el patrón mobile-first.
+
+### Mejorado
+- **Rendimiento**: Mejora en la carga y renderizado en dispositivos móviles al aplicar estilos base optimizados.
+- **SEO**: Mejor puntuación en Core Web Vitals gracias a la optimización mobile-first.
+- **Mantenibilidad**: Código CSS más limpio y predecible con progresión lógica de breakpoints.
+
+### Verificado
+- ✅ Auditoría completa de media queries residuales
+- ✅ Verificación visual en móvil (375px) y desktop (1440px)
+- ✅ Comprobación de funcionalidad del theme toggle
+- ✅ Consistencia visual en todas las páginas del proyecto
+
 ## [2.2.0] - 02-02-2026
 
 ### Refactorización

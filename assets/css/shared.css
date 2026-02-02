@@ -296,29 +296,56 @@
 /* ============================================
    RESPONSIVE
    ============================================ */
-@media (max-width: 768px) {
+/* Estilos base móvil */
+.page__content {
+    padding: var(--spacing-2xl) 0;
+}
+
+.page-header {
+    padding: var(--spacing-2xl) 0 var(--spacing-lg);
+}
+
+.page-header__meta {
+    flex-direction: column;
+    gap: var(--spacing-xs);
+}
+
+.article-content {
+    font-size: 0.9375rem;
+}
+
+.cta-section__buttons {
+    flex-direction: column;
+}
+
+.cta-section__buttons .btn {
+    width: 100%;
+}
+
+/* Desktop: 768px+ */
+@media (min-width: 768px) {
     .page__content {
-        padding: var(--spacing-2xl) 0;
+        padding: 0;
     }
 
     .page-header {
-        padding: var(--spacing-2xl) 0 var(--spacing-lg);
+        padding: var(--spacing-3xl) 0 var(--spacing-2xl);
     }
 
     .page-header__meta {
-        flex-direction: column;
-        gap: var(--spacing-xs);
+        flex-direction: row;
+        gap: var(--spacing-md);
     }
 
     .article-content {
-        font-size: 0.9375rem;
+        font-size: 1rem;
     }
 
     .cta-section__buttons {
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .cta-section__buttons .btn {
-        width: 100%;
+        width: auto;
     }
 }
