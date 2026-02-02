@@ -82,5 +82,5 @@ Especialista en Generative Engine Optimization
 
 ---
 
-**Versión**: 2.0.0  
-**Última actualización**: 26 Enero 2026 (Light Mode & Modularización)
+**Versión**: 2.2.0  
+**Última actualización**: 02 Febrero 2026 (Refactorización de Tema & Sincronización)

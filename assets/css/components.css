@@ -424,6 +424,13 @@
     color: var(--color-accent-cyan);
 }
 
+/* Light Mode specific override for IA Bubble */
+:root[data-theme="light"] .chat-bubble--ia {
+    background: rgba(0, 0, 0, 0.05);
+    border-color: rgba(0, 0, 0, 0.1);
+    color: var(--color-text-primary);
+}
+
 /* ============================================
    PROJECT TARJETAS
    ============================================ */

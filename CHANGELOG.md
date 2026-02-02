@@ -2,6 +2,15 @@
 
 Todos los cambios notables en este proyecto serán documentados en este archivo.
 
+## [2.2.0] - 02-02-2026
+
+### Refactorización
+- **Theme Toggle**: Refactorización profunda de `theme-toggle.js` para exponer `initThemeToggle` globalmente, permitiendo su reinicialización tras la carga dinámica de componentes.
+- **CSS Cleanup**: Eliminación de bloques duplicados en `components.css` relacionados con el modo claro.
+
+### Cambiado
+- **Arquitectura de Reglas**: Eliminación de reglas internas redundantes en favor de la documentación global del proyecto.
+
 ## [2.1.0] - 26-01-2026
 
 ### Estructural
