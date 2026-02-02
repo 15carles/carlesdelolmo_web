@@ -24,20 +24,29 @@ Landing page profesional para desarrollador especialista en **Generative Engine 
 ```
 Portfolio_GEO/
 ├── index.html              # Página principal
-├── plantilla-proyecto.html # Plantilla reutilizable para casos de estudio
-├── css/
-│   ├── main.css           # Variables, base, layout y animaciones
-│   ├── components.css     # Estilos de componentes UI (terminal, cards, etc.)
-│   └── shared.css         # Estilos compartidos para páginas internas
-├── js/
-│   ├── main.js           # Lógica principal (menú, scroll, animaciones de scroll)
-│   ├── theme-toggle.js   # Gestión de modo claro/oscuro
-│   ├── components.js     # Cargador de componentes modulares
-│   └── form.js           # Validación y manejo de formulario de contacto
-├── components/           # Fragmentos HTML reutilizables
-│   └── footer.html       # Footer modularizado
+├── proyectos/              # Casos de estudio y plantilla
+│   ├── ledescaparate.html
+│   └── plantilla-proyecto.html
+├── blog/                  # Artículos y plantilla de blog
+│   ├── index.html
+│   └── plantilla-post.html
+├── assets/                 # Recursos estáticos
+│   ├── css/               # Arquitectura CSS modular
+│   │   ├── main.css
+│   │   ├── components.css
+│   │   └── shared.css
+│   ├── js/                # Lógica JavaScript
+│   │   ├── main.js
+│   │   ├── theme-toggle.js
+│   │   ├── components.js
+│   │   └── form.js
+│   ├── images/            # Imágenes y assets visuales
+│   └── icons/             # Iconografía SVG
+├── components/             # Fragmentos HTML reutilizables
+│   └── footer.html
 ├── CHANGELOG.md            # Historial de cambios
 ├── VERSION                 # Versión actual del proyecto
+├── sitemap.xml             # Mapa del sitio incluyendo subdirectorios
 └── README.md               # Documentación principal
 ```
 
