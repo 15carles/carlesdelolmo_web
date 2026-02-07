@@ -2,6 +2,11 @@
 
 Todos los cambios notables en este proyecto serán documentados en este archivo.
 
+## [2.3.9] - 07-02-2026
+
+### Documentación
+- **Sincronización:** Auditoría y unificación de referencias de versión en README y archivos de control. Alineación con formato semántico vX.Y.Z en VERSION.
+
 ## [2.3.8] - 02-02-2026
 
 ### Diseño y UI

@@ -92,5 +92,5 @@ Especialista en Generative Engine Optimization
 
 ---
 
-**Versión**: 2.3.8
-**Última actualización**: 02 Febrero 2026 (Legibilidad Tags)
+**Versión**: v2.3.9
+**Última actualización**: 07 Febrero 2026 (Auditoría de Versiones)
