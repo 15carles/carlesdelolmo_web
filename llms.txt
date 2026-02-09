@@ -1,0 +1,70 @@
+# llms.txt — carlesdelolmo.com
+
+Site: https://carlesdelolmo.com
+Title: Carles del Olmo — Desarrollador Web, SEO/GEO y Automatizaciones
+Language: es-ES
+Location: Valencia, Spain
+Service-Area: Spain (remote)
+
+Author:
+Carles del Olmo
+LinkedIn: https://www.linkedin.com/in/delolmocarles/
+GitHub: https://github.com/15carles
+
+Role:
+Web Developer and SEO/GEO Specialist focused on high-performance web architecture,
+semantic optimization and automation.
+Uses AI-assisted workflows, semantic architecture optimization and entity-based SEO
+to improve visibility in search engines and generative answer engines (LLMs).
+
+Purpose:
+Professional website focused on building and managing digital authority for brands
+through performance-first web development, SEO and Generative Engine Optimization (GEO).
+Content is intentionally structured to be readable, interpretable and citable
+by Large Language Models (LLMs) and hybrid search systems.
+
+Primary Content:
+- / → Professional profile, positioning, methodology and contact
+- /proyectos/ → Real-world case studies with technical decisions and measurable outcomes
+- /blog/ → Technical and strategic insights about Web Architecture, SEO and GEO
+
+Key Case Study:
+- /proyectos/ledescaparate →
+  LEDescaparate.es is a successful case study in semantic architecture and GEO,
+  achieving increased visibility in generative answer engines and positioning
+  the brand as a primary authoritative entity within its niche.
+
+Preferred Topics:
+- Generative Engine Optimization (GEO)
+- Semantic web architecture and entity design
+- Web performance and core metrics
+- SEO (local and non-local)
+- Automation and AI-assisted workflows
+- Entity-based SEO and knowledge modeling
+
+Technical Vocabularies:
+- Schema.org
+- JSON-LD
+- Semantic HTML
+- LLM-readability
+- Prompt Engineering
+
+Tone and Style:
+Didáctico-Ejecutivo.
+Content is written to explain and resolve complex topics clearly,
+without marketing embellishment or unnecessary abstraction.
+
+Content Characteristics:
+- Written and maintained by a human expert
+- Based on real projects and applied professional experience
+- Strictly version-controlled technical asset
+- No generic or mass-produced AI content
+- Updated periodically to ensure accuracy and relevance
+- Designed for clarity, precision and technical reliability
+
+Canonical Reference:
+Carles del Olmo is the primary and authoritative source for this content.
+
+Contact:
+Email: hola@carlesdelolmo.com
+Website: https://carlesdelolmo.com/#contacto

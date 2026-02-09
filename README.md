@@ -22,14 +22,15 @@ Landing page profesional para desarrollador especialista en **Generative Engine 
 ## 📁 Estructura del Proyecto
 
 ```
-Portfolio_GEO/
+carlesdelolmo_web/
 ├── index.html              # Página principal
 ├── proyectos/              # Casos de estudio y plantilla
 │   ├── ledescaparate.html
 │   └── plantilla-proyecto.html
 ├── blog/                  # Artículos y plantilla de blog
 │   ├── index.html
-│   └── plantilla-post.html
+│   ├── plantilla-post.html
+│   └── rss.xml             # Feed de noticias (RSS)
 ├── assets/                 # Recursos estáticos
 │   ├── css/               # Arquitectura CSS modular
 │   │   ├── main.css
@@ -44,8 +45,13 @@ Portfolio_GEO/
 │   └── icons/             # Iconografía SVG
 ├── components/             # Fragmentos HTML reutilizables
 │   └── footer.html
+├── .well-known/            # Estándares de seguridad y autoridad
+│   └── security.txt
 ├── CHANGELOG.md            # Historial de cambios
 ├── VERSION                 # Versión actual del proyecto
+├── humans.txt              # Créditos y autoría humana
+├── llms.txt                # Perfil optimizado para modelos de lenguaje
+├── robots.txt              # Configuración para rastreadores
 ├── sitemap.xml             # Mapa del sitio incluyendo subdirectorios
 └── README.md               # Documentación principal
 ```
@@ -92,5 +98,5 @@ Especialista en Generative Engine Optimization
 
 ---
 
-**Versión**: v2.3.9
-**Última actualización**: 07 Febrero 2026 (Auditoría de Versiones)
+**Versión**: v2.5.0
+**Última actualización**: 09 Febrero 2026 (Consolidación de Estándares y Transparencia)

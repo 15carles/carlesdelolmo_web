@@ -26,40 +26,114 @@
 
     <!-- SCHEMA: SERVICIO & REVIEW -->
     <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
         {
-            "@context": "https://schema.org",
-            "@type": "Service",
-            "name": "Ecosistema Digital Pro: Web, SEO, GEO y Automatización",
-            "description": "Desarrollo web de alto rendimiento con arquitectura de entidades optimizada para GEO (Generative Engine Optimization), SEO técnico avanzado y sistemas de automatización para captación de leads y reportes de visibilidad local.",
-            "provider": {
-                "@type": "Person",
-                "name": "Carles del Olmo",
-                "jobTitle": "Especialista en Generative Engine Optimization y Ecosistemas Digitales",
-                "url": "https://carlesdelolmo.com" 
-            },
-            "serviceType": "Consultoría y Desarrollo Digital Integral",
-            "areaServed": "ES",
-            "review": {
-                "@type": "Review",
-                "author": {
-                    "@type": "Person",
-                    "name": "Vicente",
-                    "jobTitle": "Responsable de Estrategia Comercial"
-                },
-                "reviewBody": "El Ecosistema Digital de Carles nos sacó de la invisibilidad. La IA nos cita como expertos y el simulador cierra el interés de nuestros clientes de forma inmediata.",
-                "reviewRating": {
-                    "@type": "Rating",
-                    "ratingValue": "5",
-                    "bestRating": "5"
-                },
-                "publisher": {
-                    "@type": "Organization",
-                    "name": "LEDescaparate",
-                    "url": "https://ledescaparate.es/"
-                }
+            "@type": "CreativeWork",
+            "@id": "https://carlesdelolmo.com/proyectos/ledescaparate#case-study",
+            "name": "LEDescaparate — Caso de estudio de Arquitectura Web, SEO y GEO",
+            "url": "https://carlesdelolmo.com/proyectos/ledescaparate",
+            "description": "Caso de estudio real centrado en arquitectura web semántica, optimización de rendimiento y visibilidad en motores de respuesta generativa (GEO). Documenta decisiones técnicas y estructura de entidades que permiten mejorar la citabilidad y la autoridad de marca en buscadores e IAs.",
+            "inLanguage": "es-ES",
+            "author": {
+            "@id": "https://carlesdelolmo.com/#person"
+        },
+        "creator": {
+            "@id": "https://carlesdelolmo.com/#person"
+        },
+        "publisher": {
+            "@id": "https://carlesdelolmo.com/#organization"
+        },
+        "about": [
+            "Generative Engine Optimization",
+            "GEO",
+            "SEO técnico",
+            "Arquitectura semántica",
+            "Entity-based SEO",
+            "Rendimiento web",
+            "Schema.org",
+            "JSON-LD",
+            "Semantic HTML",
+            "LLM-readability",
+            "Automatización"
+        ],
+        "keywords": [
+            "GEO",
+            "SEO",
+            "Arquitectura semántica",
+            "Schema.org",
+            "JSON-LD",
+            "Web performance",
+            "Entity SEO",
+            "Motores de respuesta",
+            "Automatización"
+        ],
+        "mainEntity": {
+            "@id": "https://carlesdelolmo.com/proyectos/ledescaparate#client"
+        },
+        "isBasedOn": {
+            "@type": "WebSite",
+            "name": "LEDescaparate",
+            "url": "https://ledescaparate.es/"
+        },
+        "hasPart": [
+            {
+             "@id": "https://carlesdelolmo.com/proyectos/ledescaparate#service"
             }
+        ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://carlesdelolmo.com/proyectos/ledescaparate#client",
+      "name": "LEDescaparate",
+      "url": "https://ledescaparate.es/",
+      "sameAs": [
+        "https://ledescaparate.es/"
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://carlesdelolmo.com/proyectos/ledescaparate#service",
+      "name": "Ecosistema Digital Pro: Web, SEO, GEO y Automatización (LEDescaparate)",
+      "serviceType": "Consultoría y Desarrollo Digital Integral",
+      "description": "Desarrollo web de alto rendimiento con arquitectura semántica y de entidades optimizada para GEO (Generative Engine Optimization), SEO técnico avanzado y sistemas de automatización orientados a captación de leads y visibilidad en motores de respuesta.",
+      "provider": {
+        "@id": "https://carlesdelolmo.com/#person"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "Spain"
+      },
+      "audience": {
+        "@type": "Audience",
+        "audienceType": "Negocios que necesitan autoridad digital y visibilidad en buscadores y motores de respuesta"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": {
+            "@type": "Person",
+            "name": "Vicente",
+            "jobTitle": "Responsable de Estrategia Comercial"
+          },
+          "reviewBody": "El Ecosistema Digital de Carles nos sacó de la invisibilidad. La IA nos cita como expertos y el simulador cierra el interés de nuestros clientes de forma inmediata.",
+          "reviewRating": {
+            "@type": "Rating",
+            "ratingValue": "5",
+            "bestRating": "5"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "LEDescaparate",
+            "url": "https://ledescaparate.es/"
+          }
         }
-    </script>
+      ]
+    }
+  ]
+}
+</script>
 
 </head>
 
@@ -268,7 +342,7 @@
                                 <circle class="progress" cx="40" cy="40" r="34"
                                     style="stroke-dasharray: 213.6; stroke-dashoffset: 4.2;" />
                             </svg>
-                            <span class="pagespeed-value">98</span>
+                            <span class="pagespeed-value">100</span>
                         </div>
                         <span class="pagespeed-label">Rendimiento</span>
                     </div>
@@ -280,7 +354,7 @@
                                 <circle class="progress" cx="40" cy="40" r="34"
                                     style="stroke-dasharray: 213.6; stroke-dashoffset: 8.5;" />
                             </svg>
-                            <span class="pagespeed-value">96</span>
+                            <span class="pagespeed-value">98</span>
                         </div>
                         <span class="pagespeed-label">Prácticas</span>
                     </div>
@@ -292,7 +366,7 @@
                                 <circle class="progress" cx="40" cy="40" r="34"
                                     style="stroke-dasharray: 213.6; stroke-dashoffset: 14.9;" />
                             </svg>
-                            <span class="pagespeed-value">93</span>
+                            <span class="pagespeed-value">97</span>
                         </div>
                         <span class="pagespeed-label">Accesibilidad</span>
                     </div>

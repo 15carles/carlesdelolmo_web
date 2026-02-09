@@ -2,6 +2,28 @@
 
 Todos los cambios notables en este proyecto serán documentados en este archivo.
 
+## [2.5.0] - 09-02-2026
+
+### Añadido
+- **Estándares de Transparencia**: Implementación de `llms.txt` (perfil para IA), `humans.txt` (créditos humanos) y `.well-known/security.txt` (política de seguridad).
+- **Sindicación**: Creación de `blog/rss.xml` para la distribución de contenidos de Insights.
+- **SEO & Auth**: Configuración completa de `robots.txt` vinculada al sitemap.
+
+### Cambiado
+- **Documentación**: Refactorización de la estructura de archivos en el README para reflejar la nueva arquitectura de autoridad.
+
+## [2.4.1] - 09-02-2026
+
+### SEO
+- **Robots.txt**: Adición del archivo de configuración para rastreadores.
+- **Sitemap**: Actualización de fechas de modificación (`lastmod`) en `sitemap.xml`.
+
+## [2.4.0] - 09-02-2026
+
+### Estructural
+- **Renombrado de Repositorio**: Cambio oficial del nombre del proyecto a `carlesdelolmo_web` en GitHub y sincronización de remotos locales.
+- **Documentación**: Actualización de la estructura de archivos en el README y referencias internas.
+
 ## [2.3.9] - 07-02-2026
 
 ### Documentación
@@ -144,6 +166,9 @@ Todos los cambios notables en este proyecto serán documentados en este archivo.
 ### Añadido
 - **Reingeniería de Chat**: Interfaz de mensajería moderna con alineación diferenciada y lógica de IA generativa visualmente optimizada.
 - **Testimonio Premium**: Refinamiento estético de la tarjeta "Mención de Honor" con glassmorphism profundo y jerarquía tipográfica corregida.
+
+**Versión**: v2.5.0
+**Última actualización**: 09 Febrero 2026 (Consolidación de Estándares y Transparencia)
 
 ## [1.3.0] - 18-01-2026
 
