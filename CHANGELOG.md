@@ -2,6 +2,17 @@
 
 Todos los cambios notables en este proyecto serán documentados en este archivo.
 
+## [2.7.0] - 11-02-2026
+
+### Añadido
+- **Integración Backend**: Conexión del formulario de contacto con Supabase para almacenamiento real de leads.
+- **Página de Gracias**: Nueva página `gracias.html` para confirmación de envíos exitosos con diseño consistente.
+
+### Cambiado
+- **Lógica de Formulario**: Reemplazo de simulación por inserción directa en tabla `leads_contacto`.
+- **Navegación**: Redirección automática a `gracias.html` tras envío exitoso.
+
+
 ## [2.6.0] - 10-02-2026
 
 ### Cambiado

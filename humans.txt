@@ -14,7 +14,7 @@ Tone: Didáctico-Ejecutivo
 Focus: Semantic architecture, performance, AI-assisted workflows and entity-based SEO.
 Standards: HTML5, Semantic HTML, CSS3, JavaScript, JSON-LD (Schema.org)
 Version Control: Yes (strictly maintained)
-Last Updated: 2026-02-09
+Last Updated: 2026-02-11
 
 /* CONTENT */
 Language: Spanish (Spain)
