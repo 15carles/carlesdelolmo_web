@@ -98,5 +98,6 @@ Especialista en Generative Engine Optimization
 
 ---
 
-**Versión**: v2.5.0
-**Última actualización**: 09 Febrero 2026 (Consolidación de Estándares y Transparencia)
+**Versión**: v2.6.0  
+**Última actualización**: 10 Febrero 2026 (Implementación de URLs Limpias)
+

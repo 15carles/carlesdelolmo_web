@@ -2,6 +2,18 @@
 
 Todos los cambios notables en este proyecto serán documentados en este archivo.
 
+## [2.6.0] - 10-02-2026
+
+### Cambiado
+- **URLs Limpias**: Eliminación de la extensión `.html` en todas las URLs del sitio para mejorar SEO y experiencia de usuario.
+  - Actualización de todos los enlaces internos en archivos HTML (`index.html`, `proyectos/ledescaparate.html`, `blog/index.html`, `blog/plantilla-post.html`)
+  - Actualización de componentes compartidos (`components/navbar.html`)
+  - Modificación de `sitemap.xml` para reflejar las nuevas URLs limpias
+  - Compatible con GitHub Pages (funcionalidad nativa de servir archivos sin extensión)
+
+### Técnico
+- **Compatibilidad**: Las URLs antiguas con `.html` seguirán funcionando en GitHub Pages, pero se recomienda configurar redirección 301 en Cloudflare para evitar contenido duplicado.
+
 ## [2.5.0] - 09-02-2026
 
 ### Añadido
