@@ -95,10 +95,10 @@ Proyecto personal - Todos los derechos reservados.
 
 **Carles del Olmo**  
 Especialista en Generative Engine Optimization
-[LinkedIn](https://www.linkedin.com/in/delolmocarles/) | [Web](https://.....es)
+[LinkedIn](https://www.linkedin.com/in/delolmocarles/) | [Web](https://www.carlesdelolmo.com)
 
 ---
 
-**Versión**: v2.7.0  
-**Última actualización**: 11 Febrero 2026 (Integración Supabase)
+**Versión**: v2.7.5
+**Última actualización**: 12 Febrero 2026
 
