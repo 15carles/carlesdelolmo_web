@@ -33,9 +33,9 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="manifest" href="/site.webmanifest">
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/components.css">
+    <!-- Stylesheets: Preload Critical CSS -->
+    <link rel="stylesheet" href="assets/css/main.css?v=2.7.5">
+    <link rel="stylesheet" href="assets/css/components.css?v=2.7.5">
 
     <!-- Theme Toggle Script (inline to prevent FOUC) -->
     <script>
@@ -56,35 +56,35 @@
         <div class="container">
             <div class="grid grid-cols-2">
                 <!-- Left Column: Content -->
-                <div class="animate-on-scroll">
+                <div class="animate-on-scroll hero-content-wrapper">
                     <!-- Badge -->
-                    <div class="badge badge--status mb-lg">
+                    <div class="badge badge--status mb-lg helper-center-mobile">
                         <span class="badge__dot badge__dot--pulse" aria-hidden="true"></span>
                         <span>Disponible para proyectos</span>
                     </div>
 
                     <!-- Heading -->
-                    <h1 class="mb-md" aria-label="Webs optimizadas para buscadores e IA">
+                    <h1 class="mb-md helper-center-mobile" aria-label="Webs optimizadas para buscadores e IA">
                         Webs optimizadas<br>
                         <span class="gradient-text">para buscadores e IA</span>
                     </h1>
 
                     <!-- Description -->
-                    <p class="text-secondary mb-xl"
+                    <p class="text-secondary mb-xl helper-center-mobile"
                         aria-label="Diseño y optimizo webs pensadas para personas y preparadas para la inteligencia artificial">
                         Diseño y optimizo webs pensadas para personas<br>
                         y preparadas para la <strong>inteligencia artificial</strong>.
                     </p>
 
                     <!-- CTA Buttons -->
-                    <div class="flex gap-md mb-xl">
+                    <div class="flex gap-md mb-xl helper-flex-center-mobile">
                         <a href="#proyectos" class="btn btn--primary btn--large" aria-label="Ver Proyectos">Ver
                             Proyectos</a>
                         <a href="#contacto" class="btn btn--secondary btn--large" aria-label="Contactar">Contactar</a>
                     </div>
 
                     <!-- Stats -->
-                    <div class="stats">
+                    <div class="stats hidden-mobile">
                         <div class="stat">
                             <div class="stat__value">10+</div>
                             <div class="stat__label">Proyectos</div>
@@ -101,7 +101,7 @@
                 </div>
 
                 <!-- Right Column: Code Terminal Card -->
-                <div class="animate-on-scroll flex flex-col justify-center pb-3xl hero-right-col">
+                <div class="animate-on-scroll flex flex-col justify-center pb-3xl hero-right-col hidden-mobile">
                     <div class="terminal">
                         <!-- Terminal Header -->
                         <div class="terminal__header">
@@ -152,7 +152,7 @@
 
                     <!-- Project Content -->
                     <div class="project-card__content">
-                        <h3 class="project-card__title"><a href="proyectos/ledescaparate">LEDescaparate</a></h3>
+                        <h3 class="project-card__title"><a href="proyectos/ledescaparate.html">LEDescaparate</a></h3>
 
                         <!-- Badges -->
                         <div class="project-card__badges">
@@ -424,7 +424,7 @@
                         </div>
                         <div>
                             <h3 class="contact-info-card__title">Ubicación</h3>
-                            <p class="contact-info-card__content">España - Remoto Mundial</p>
+                            <p class="contact-info-card__content">Valencia - España - Remoto</p>
                         </div>
                     </div>
                 </div>

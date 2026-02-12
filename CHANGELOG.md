@@ -2,6 +2,50 @@
 
 Todos los cambios notables en este proyecto serán documentados en este archivo.
 
+## [v2.7.5] - 2026-02-12
+### Fixed
+- **CRÍTICO:** Restaurada la carga de `components.css` que había roto los estilos de botones, badges y terminal en móvil.
+- **Visual:** Corregido el centrado del Hero en móvil combinando `main.css` (helpers) con los estilos base de componentes.
+- **Layout (Móvil):** Ocultados bloques de Estadísticas y Terminal en pantallas pequeñas para limpiar la interfaz y priorizar los botones CTA.
+- **Estilo:** Ajustado tamaño de botones CTA en móvil y forzada alineación izquierda en código del terminal.
+- **Corrección:** Eliminada restricción de ancho en el grid de escritorio (`justify-items: start`) que afectaba al formulario de contacto.
+- **Móvil:** Formulario de contacto ajustado a ancho completo (100%) con márgenes accesibles y botón centrado.
+- **Build:** Eliminada duplicación de códigos CSS en `main.css`.
+
+## [2.7.4] - 12-02-2026
+
+### Visual
+- **Navbar Edge-to-Edge**: Implementación de ancho completo real (`width: 100%`) para la barra de navegación en móviles, eliminando restricciones de `max-width` en el contenedor interno.
+- **Centrado Absoluto en Móvil**: Unificación del eje visual en viewports < 768px.
+  - Textos del Hero (`h1`, `p`, badge) centrados mediante `text-align: center`.
+  - Botones CTA alineados al centro mediante `justify-content: center`.
+  - Terminal de código centrado con `margin: 0 auto`.
+- **Restauración Desktop**: Mantenimiento de la alineación izquierda estándar en pantallas grandes para preservar la jerarquía visual original.
+
+## [2.7.3] - 12-02-2026
+
+### Visual y Simetría
+- **Navbar**: Ajuste del padding interno del contenedor de navegación para coincidir con el layout del cuerpo (16px en móvil, 24px en desktop). Eliminada la desalineación visual entre el logo/menú y el contenido principal.
+- **Hero**: Refuerzo de estilos en `.hero-right-col` para asegurar `width: 100%` y eliminar cualquier margen negativo residual que pudiera causar contacto con los bordes de la pantalla.
+
+## [2.7.2] - 12-02-2026
+
+### Optimización UI
+- **Layout Móvil**: Implementación de diseño "borde a borde" para maximizar el espacio útil en pantallas pequeñas.
+  - Reducción del padding lateral en `.container` de 24px a 16px (1rem) en móvil.
+  - Reducción del padding interno en `.terminal` de 32px a 16px (1rem) en móvil.
+  - Restauración automática de espaciados originales en tablets y desktop (min-width: 768px).
+
+## [2.7.1] - 12-02-2026
+
+### fix
+- **Desbordamiento Horizontal Móvil**: Corregido overflow de 76px en viewport de 375px que afectaba a la sección Hero.
+  - Aplicado `white-space: pre-wrap` y `word-break: break-word` en `.terminal__code` para permitir ajuste de línea del código.
+  - Reforzado `max-width: 100%` en sistema de grid (`.grid-cols-1`, `.grid-cols-2`, `.grid-cols-3`) para móvil.
+  - Añadido `max-width: 100%` y `width: 100%` en `.stats` y `.stat` para prevenir expansión.
+  - Aplicado `word-break: break-word` en `.stat__value` para prevenir overflow en números largos.
+  - Añadido `overflow-x: hidden` en `body` y `.container` como medida preventiva global.
+
 ## [2.7.0] - 11-02-2026
 
 ### Añadido

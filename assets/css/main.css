@@ -149,6 +149,9 @@ body {
     min-height: 100vh;
     animation: floating-waves 20s ease-in-out infinite;
     transition: background-color 0.3s ease, color 0.3s ease;
+    /* Fix: Prevenir scroll horizontal global */
+    overflow-x: hidden;
+    width: 100%;
 }
 
 /* ============================================
@@ -195,7 +198,11 @@ a {
 .container {
     width: 100%;
     margin: 0 auto;
-    padding: 0 var(--spacing-md);
+    /* Cambio v2.7.2: Reducir padding a 1rem (16px) en móvil para ganar ancho útil */
+    padding: 0 var(--spacing-sm);
+    /* Fix: Asegurar que nunca exceda el viewport y ocultar overflow residual */
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .section {
@@ -208,6 +215,76 @@ a {
 .grid {
     display: grid;
     gap: var(--spacing-lg);
+    /* Cambio v2.7.4: Centrar contenido en móvil */
+    gap: var(--spacing-lg);
+}
+
+/* ============================================
+   Ajustes Móvil (< 768px) - CRITICAL FIX V2
+   ============================================ */
+@media (max-width: 767px) {
+
+    /* Clases de utilidad directa - Máxima prioridad */
+    .helper-center-mobile {
+        text-align: center !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        width: 100% !important;
+    }
+
+    .helper-flex-center-mobile {
+        display: flex !important;
+        justify-content: center !important;
+        width: 100% !important;
+    }
+
+    .hero-content-wrapper {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .grid {
+        justify-items: center !important;
+        text-align: center !important;
+    }
+
+    .stats {
+        justify-content: center !important;
+        /* Cambio v2.7.5b: Ocultar stats en móvil como solicitado */
+        display: none !important;
+    }
+
+    /* Fix v2.7.5e: Formulario ancho completo en móvil */
+    .form,
+    .contact-info-card {
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    /* Fix v2.7.5e: Reducir padding interno del formulario en móvil */
+    .form {
+        padding: var(--spacing-md) !important;
+    }
+
+    /* Cambio v2.7.5b: Ocultar terminal en móvil como solicitado */
+    .hero-right-col {
+        display: none !important;
+    }
+
+    /* Fix v2.7.5c: Ajustar botones en móvil para que no se vean gigantes ni desborden */
+    .btn--large {
+        padding: 0.75rem 1.5rem !important;
+        font-size: 1rem !important;
+        width: auto !important;
+    }
+}
+
+/* Flex containers para botones - Centrado en móvil */
+.flex {
+    justify-content: center;
+    width: 100%;
 }
 
 /* Por defecto: 1 columna (móvil) */
@@ -215,16 +292,38 @@ a {
 .grid-cols-2,
 .grid-cols-3 {
     grid-template-columns: repeat(1, 1fr);
+    /* Fix: Forzar límite de ancho en móvil */
+    max-width: 100%;
 }
 
 /* Tablet: 768px+ */
 @media (min-width: 768px) {
+    .container {
+        /* Restaurar padding original en pantallas más grandes */
+        padding: 0 var(--spacing-md);
+    }
+
     .section {
         padding: var(--spacing-2xl) 0;
     }
 
     .grid-cols-2 {
         grid-template-columns: repeat(2, 1fr);
+        max-width: none;
+        /* NUEVO: Remover límite en desktop */
+        text-align: left;
+    }
+
+    /* Restaurar alineación flex en desktop */
+    .flex {
+        justify-content: flex-start;
+    }
+
+    .hero__content,
+    .hero__content h1,
+    .hero__content p {
+        text-align: left;
+        align-items: flex-start;
     }
 
     .grid-cols-3 {
@@ -234,9 +333,42 @@ a {
 
 /* Desktop: 1024px+ */
 @media (min-width: 1024px) {
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
     .grid-cols-3 {
         grid-template-columns: repeat(3, 1fr);
     }
+}
+
+/* ============================================
+   UTILIDADES ESPECÍFICAS
+   ============================================ */
+.hero-right-col {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    /* Cambio v2.7.4: Centrado en móvil */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Cambio v2.7.4: Centrado de textos */
+    text-align: center;
+    align-items: center;
+}
+
+.hero__content h1 {
+    text-align: center;
+}
+
+.hero__content p {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Pantallas grandes: 1280px+ */
