@@ -99,6 +99,6 @@ Especialista en Generative Engine Optimization
 
 ---
 
-**Versión**: v2.7.5
-**Última actualización**: 12 Febrero 2026
+**Versión**: v2.7.6  
+**Última actualización**: 13 Febrero 2026 (Implementación Schema Integral)
 

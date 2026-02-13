@@ -2,6 +2,19 @@
 
 Todos los cambios notables en este proyecto serán documentados en este archivo.
 
+## [v2.7.6] - 2026-02-13
+### Añadido
+- **SEO/GEO:** Implementación integral de marcado de datos estructurados (Schema.org) mediante JSON-LD.
+- **Entidad Central:** Definición de "Carles del Olmo" como `Person` y `LocalBusiness` (Valencia) en la página de inicio.
+- **Catálogo de Servicios:** Estructuración de los 4 pilares de servicios con rangos de precios reales y descripciones optimizadas para motores de respuesta.
+- **Semántica de Blog:** Implementación de `ItemList` en el índice de blog y `BlogPosting` en la plantilla de artículos.
+- **Casos de Éxito:** Estructuración de proyectos como `CaseStudy` para mejorar la citabilidad por LLMs.
+- **IA Readiness:** Actualización de `llms.txt` con un resumen semántico de autoridad y servicios.
+
+### Cambiado
+- **Refactorización:** Centralización de entidades para evitar duplicidad y mejorar la coherencia del grafo de conocimiento.
+- **Limpieza:** Eliminación de marcado redundante en proyectos específicos para unificar la fuente de verdad.
+
 ## [v2.7.5] - 2026-02-12
 ### Fixed
 - **CRÍTICO:** Restaurada la carga de `components.css` que había roto los estilos de botones, badges y terminal en móvil.
