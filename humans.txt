@@ -1,25 +1,30 @@
 /* TEAM */
 Author: Carles del Olmo
-Role: Web Developer, SEO/GEO Specialist & Automation Consultant
+Role: Web Designer in Valencia, SEO & GEO Specialist
 Location: Valencia, Spain
-Service Area: Spain (remote)
+Service Area: Valencia (primary), Spain (remote)
 Email: hola@carlesdelolmo.com
 LinkedIn: https://www.linkedin.com/in/delolmocarles/
 GitHub: https://github.com/15carles/
 
 /* SITE */
 Site Name: Carles del Olmo
-Purpose: Professional website focused on web architecture, SEO, Generative Engine Optimization (GEO) and automation.
+Business Type: ProfessionalService (Personal Brand)
+Purpose: Professional website focused on strategic web design, semantic architecture, SEO and Generative Engine Optimization (GEO).
 Tone: Didáctico-Ejecutivo
-Focus: Semantic architecture, performance, AI-assisted workflows and entity-based SEO.
+Focus: Diseño web orientado a conversión, arquitectura semántica, rendimiento extremo y autoridad digital para IAs.
 Standards: HTML5, Semantic HTML, CSS3, JavaScript, JSON-LD (Schema.org)
 Version Control: Yes (strictly maintained)
-Last Updated: 2026-02-13
+Last Updated: 2026-02-21
 
 /* CONTENT */
 Language: Spanish (Spain)
-Authorship: 100% Human-written, experience-based content
-Content Type: Original professional content
-Authorship: Human-written, experience-based
-Updates: Periodic
-Audience: Technical decision-makers, founders and digital teams
+Authorship: 100% human-written, experience-based professional content
+Content Type: Original content based on real projects and implementation
+Updates: Periodic and strategy-driven
+Audience: Founders, SMEs and technical decision-makers
+
+/* PHILOSOPHY */
+Approach: Strategic web design in Valencia built on semantic architecture and entity-based SEO.
+Core Belief: A website is not just an online presence — it is a structured digital asset.
+Commitment: Create high-performance websites that convert, rank and earn authority in both search engines and AI-driven environments.

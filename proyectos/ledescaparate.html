@@ -26,22 +26,95 @@
 
     <!-- SCHEMA: CASO DE ESTUDIO -->
     <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
-      "@type": "CaseStudy",
-      "@id": "https://carlesdelolmo.com/proyectos/ledescaparate#case-study",
-      "name": "LEDescaparate — Caso de estudio de Arquitectura Web, SEO y GEO",
-      "description": "Caso de estudio real centrado en arquitectura web semántica, optimización de rendimiento y visibilidad en motores de respuesta generativa (GEO).",
-      "author": {
-        "@id": "https://carlesdelolmo.com/#person"
-      },
-      "publisher": {
-        "@id": "https://carlesdelolmo.com/#organization"
-      },
+      "@type": "WebPage",
+      "@id": "https://carlesdelolmo.com/proyectos/ledescaparate#webpage",
+      "url": "https://carlesdelolmo.com/proyectos/ledescaparate",
+      "name": "Caso de Estudio: LEDescaparate.es | Carles del Olmo",
+      "description": "Descubre cómo logramos que la IA cite a LEDescaparate.es como autoridad mediante arquitectura de entidades y optimización generativa (GEO).",
       "inLanguage": "es-ES",
-      "about": ["GEO", "SEO técnico", "Arquitectura semántica"]
+      "isPartOf": { "@id": "https://carlesdelolmo.com/#website" },
+      "about": { "@id": "https://carlesdelolmo.com/#person" },
+      "publisher": { "@id": "https://carlesdelolmo.com/#business" },
+      "mainEntity": { "@id": "https://carlesdelolmo.com/proyectos/ledescaparate#case-study" },
+      "breadcrumb": { "@id": "https://carlesdelolmo.com/proyectos/ledescaparate#breadcrumb" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://carlesdelolmo.com/proyectos/ledescaparate#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Inicio",
+          "item": "https://carlesdelolmo.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Proyectos",
+          "item": "https://carlesdelolmo.com/#proyectos"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "LEDescaparate",
+          "item": "https://carlesdelolmo.com/proyectos/ledescaparate"
+        }
+      ]
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://carlesdelolmo.com/proyectos/ledescaparate#case-study",
+      "additionalType": "https://schema.org/CaseStudy",
+      "name": "LEDescaparate — Caso de estudio de Arquitectura Web, SEO y GEO",
+      "description": "Caso de estudio centrado en arquitectura web semántica, optimización de rendimiento y visibilidad en motores de respuesta generativa (GEO).",
+      "inLanguage": "es-ES",
+      "author": { "@id": "https://carlesdelolmo.com/#person" },
+      "publisher": { "@id": "https://carlesdelolmo.com/#business" },
+      "about": [
+        "Arquitectura de entidades",
+        "SEO técnico",
+        "Generative Engine Optimization",
+        "Optimización semántica",
+        "Rendimiento web"
+      ],
+      "mentions": [
+        { "@id": "https://ledescaparate.es/#org" },
+        { "@id": "https://ledescaparate.es/#website" }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://ledescaparate.es/#org",
+      "name": "LEDescaparate.es",
+      "url": "https://ledescaparate.es/",
+      "logo": "https://ledescaparate.es/images/logo.png"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://ledescaparate.es/#website",
+      "url": "https://ledescaparate.es/",
+      "name": "LEDescaparate.es",
+      "publisher": { "@id": "https://ledescaparate.es/#org" }
+    },
+    {
+      "@type": "Review",
+      "@id": "https://carlesdelolmo.com/proyectos/ledescaparate#review",
+      "itemReviewed": { "@id": "https://carlesdelolmo.com/proyectos/ledescaparate#case-study" },
+      "reviewBody": "El Ecosistema Digital de Carles nos sacó de la invisibilidad. La IA nos cita como expertos y el simulador cierra el interés de nuestros clientes de forma inmediata.",
+      "author": {
+        "@type": "Person",
+        "name": "Vicente",
+        "affiliation": { "@id": "https://ledescaparate.es/#org" }
+      }
     }
-    </script>
+  ]
+}
+</script>
 
 </head>
 

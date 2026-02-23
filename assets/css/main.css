@@ -338,6 +338,25 @@ a {
         margin: 0 auto;
     }
 
+    .col-span-2 {
+        grid-column: span 2 / span 2;
+    }
+
+    .pr-lg {
+        padding-right: var(--spacing-lg);
+    }
+}
+
+.self-start {
+    align-self: flex-start;
+}
+
+.grid-cols-3 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+@media (min-width: 1024px) {
     .grid-cols-3 {
         grid-template-columns: repeat(3, 1fr);
     }

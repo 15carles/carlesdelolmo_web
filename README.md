@@ -24,6 +24,7 @@ Landing page profesional para desarrollador especialista en **Generative Engine 
 ```
 carlesdelolmo_web/
 ├── index.html              # Página principal
+├── pricing.html            # Servicios y tarifas (Diseño Web, SEO, GEO)
 ├── gracias.html            # Página de agradecimiento (Formulario)
 ├── proyectos/              # Casos de estudio y plantilla
 │   ├── ledescaparate.html
@@ -99,6 +100,6 @@ Especialista en Generative Engine Optimization
 
 ---
 
-**Versión**: v2.7.6  
-**Última actualización**: 13 Febrero 2026 (Implementación Schema Integral)
+**Versión**: v2.8.0  
+**Última actualización**: 23 Febrero 2026 (Consolidación de Sistema de Precios y Formulario dinámico con Supabase)
 

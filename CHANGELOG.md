@@ -2,6 +2,23 @@
 
 Todos los cambios notables en este proyecto serán documentados en este archivo.
 
+## [v2.8.0] - 2026-02-23
+### Añadido
+- **Feature (Pricing):** Implementación integral de `pricing.html` con sistema de pestañas sticky y acordeones FAQ.
+- **Backend:** Conexión del formulario de presupuesto con **Supabase** para gestión de leads en tiempo real.
+- **Formulario:** Nuevo componente modular `formulario.html` con diseño optimizado en dos columnas y lógica de validación avanzada (`form.js`).
+
+### Cambiado
+- **SEO/GEO:** Sincronización de `sitemap.xml` con nuevas rutas y actualización de `README.md` para reflejar la versión v2.8.0.
+
+## [v2.7.10] - 2026-02-23
+### Añadido
+- **UX:** Implementación de auto-scroll suave (`scrollIntoView`) en las pestañas de `pricing.html`. Ahora la pestaña activa se centra automáticamente en móviles cuando desborda horizontalmente, mejorando la navegación y visibilidad.
+
+## [v2.7.9] - 2026-02-23
+### Cambiado
+- **UI:** Adaptación estética del SVG de "Autoridad Digital para IAs" en `pricing.html`. Ahora usa una cuadrícula de 64x64 y `stroke-width="2"` para ser consistente con el resto de ilustraciones del sitio.
+
 ## [v2.7.6] - 2026-02-13
 ### Añadido
 - **SEO/GEO:** Implementación integral de marcado de datos estructurados (Schema.org) mediante JSON-LD.
