@@ -423,10 +423,17 @@
     word-break: break-word;
     /* Fix v2.7.5d: Asegurar alineación izquierda siempre, ignorando contenedores centrados */
     text-align: left;
+    scrollbar-width: none;
+}
+
+.terminal__code::-webkit-scrollbar {
+    display: none;
 }
 
 .terminal__code pre {
     margin: 0;
+    white-space: pre-wrap;
+    word-break: break-word;
 }
 
 /* Resaltado de sintaxis de código */

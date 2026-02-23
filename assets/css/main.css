@@ -202,7 +202,6 @@ a {
     padding: 0 var(--spacing-sm);
     /* Fix: Asegurar que nunca exceda el viewport y ocultar overflow residual */
     max-width: 100%;
-    overflow-x: hidden;
 }
 
 .section {
