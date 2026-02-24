@@ -2,6 +2,19 @@
 
 Todos los cambios notables en este proyecto serán documentados en este archivo.
 
+## [Cambios Recientes] - 2026-02-24
+### Añadido
+- **Blog:** Nuevo artículo "El fin del SEO tal como lo conocemos: La era del GEO" (`el-fin-del-seo-la-era-del-geo.html`).
+- **UI:** Implementación de clase `.article-box` en `shared.css` para agrupar párrafos bajo el efecto glassmorphism oscuro.
+- **Formulario:** Nueva opción de checkbox "Auditoría SEO/GEO" en `formulario.html`.
+
+### Cambiado
+- **Blog:** Actualización de `blog/index.html` para enlazar el nuevo artículo.
+- **Plantilla:** Refactorización de `plantilla-post.html` utilizando contenedores `.article-box`.
+- **Sitemap:** Sincronización de `sitemap.xml` con la nueva URL del artículo.
+- **UI:** Añadido `theme-toggle.js` en las páginas del blog.
+- **README:** Actualización del esquema de árbol en `README.md`.
+
 ## [v2.8.0] - 2026-02-23
 ### Añadido
 - **Feature (Pricing):** Implementación integral de `pricing.html` con sistema de pestañas sticky y acordeones FAQ.

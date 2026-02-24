@@ -31,6 +31,7 @@ carlesdelolmo_web/
 │   └── plantilla-proyecto.html
 ├── blog/                  # Artículos y plantilla de blog
 │   ├── index.html
+│   ├── el-fin-del-seo-la-era-del-geo.html
 │   ├── plantilla-post.html
 │   └── rss.xml             # Feed de noticias (RSS)
 ├── assets/                 # Recursos estáticos
