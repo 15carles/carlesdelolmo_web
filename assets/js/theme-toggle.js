@@ -1,36 +1,72 @@
 /**
- * Theme Toggle Script
- * Manages light/dark mode switching with localStorage persistence
+ * Script de Alternancia de Tema (Sistema por defecto + override del usuario)
+ * - Por defecto: sigue prefers-color-scheme (y cambia en vivo si el sistema cambia)
+ * - Si el usuario alterna: se guarda override en localStorage y ya no sigue el sistema
  */
 
 (function () {
     'use strict';
 
-    // Get theme from localStorage or default to 'light'
-    function getStoredTheme() {
-        return localStorage.getItem('theme') || 'light';
+    const THEME_KEY = 'theme'; // 'light' | 'dark' | null (auto)
+
+    // Tema del sistema
+    function getSystemTheme() {
+        return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
     }
 
-    // Set theme on document
-    function setTheme(theme) {
+    // Tema guardado por el usuario (override)
+    function getUserThemeOverride() {
+        const t = localStorage.getItem(THEME_KEY);
+        return (t === 'dark' || t === 'light') ? t : null;
+    }
+
+    // Tema efectivo (override si existe, si no sistema)
+    function getEffectiveTheme() {
+        return getUserThemeOverride() ?? getSystemTheme();
+    }
+
+    // Aplicar tema al documento (NO guarda)
+    function applyTheme(theme) {
         document.documentElement.setAttribute('data-theme', theme);
-        localStorage.setItem('theme', theme);
     }
 
-    // Apply theme immediately (before page renders to avoid flash)
-    const currentTheme = getStoredTheme();
-    setTheme(currentTheme);
+    // Guardar override del usuario + aplicar
+    function setUserTheme(theme) {
+        if (theme !== 'dark' && theme !== 'light') return;
+        localStorage.setItem(THEME_KEY, theme);
+        applyTheme(theme);
+    }
 
-    // Helper: Update toggle button icons
+    // Volver a automático (seguir sistema)
+    function clearUserThemeOverride() {
+        localStorage.removeItem(THEME_KEY);
+        applyTheme(getSystemTheme());
+        // Actualiza iconos por si existe UI
+        updateAllToggleIcons();
+    }
+
+    // --- Evitar parpadeos: aplicar el tema lo antes posible ---
+    applyTheme(getEffectiveTheme());
+
+    // Escuchar cambios del sistema SOLO si no hay override del usuario
+    const media = window.matchMedia('(prefers-color-scheme: dark)');
+    media.addEventListener('change', () => {
+        if (!getUserThemeOverride()) {
+            applyTheme(getSystemTheme());
+            updateAllToggleIcons();
+        }
+    });
+
+    // Ayudante: Actualizar iconos de un botón
     function updateToggleIcon(button) {
         if (!button) return;
 
-        const theme = getStoredTheme();
+        const theme = getEffectiveTheme();
         const sunIcon = button.querySelector('.theme-toggle__icon--sun');
         const moonIcon = button.querySelector('.theme-toggle__icon--moon');
-
         if (!sunIcon || !moonIcon) return;
 
+        // Si estás en dark, muestro el sol (para pasar a light). Si estás en light, muestro la luna.
         if (theme === 'dark') {
             sunIcon.style.display = 'block';
             moonIcon.style.display = 'none';
@@ -40,39 +76,39 @@
         }
     }
 
-    // Main Init Function (Exposed Globally)
+    function updateAllToggleIcons() {
+        updateToggleIcon(document.getElementById('theme-toggle'));
+        updateToggleIcon(document.getElementById('theme-toggle-mobile'));
+    }
+
+    // Función de inicialización principal (expuesta globalmente)
     window.initThemeToggle = function () {
         const themeToggle = document.getElementById('theme-toggle');
         const themeToggleMobile = document.getElementById('theme-toggle-mobile');
 
-        // Toggle action
+        // Acción de alternancia (esto crea override del usuario)
         function toggleTheme() {
-            const currentTheme = getStoredTheme();
-            const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-            setTheme(newTheme);
-
-            // Update all buttons found in DOM
-            updateToggleIcon(document.getElementById('theme-toggle'));
-            updateToggleIcon(document.getElementById('theme-toggle-mobile'));
+            const current = getEffectiveTheme();
+            const next = current === 'light' ? 'dark' : 'light';
+            setUserTheme(next);
+            updateAllToggleIcons();
         }
 
-        // Initialize state for found buttons
+        // Inicializar iconos
         if (themeToggle) updateToggleIcon(themeToggle);
         if (themeToggleMobile) updateToggleIcon(themeToggleMobile);
 
-        // Attach Listeners (removing old ones not needed as we replace element or it's idempotent enough)
-        // A simple way to avoid duplicate listeners is to check a flag, but since we are re-initializing
-        // because the element was *replaced* or *newly created*, simply adding listener is fine.
+        // Adjuntar listeners
+        if (themeToggle) themeToggle.onclick = toggleTheme;
+        if (themeToggleMobile) themeToggleMobile.onclick = toggleTheme;
 
-        if (themeToggle) {
-            themeToggle.onclick = toggleTheme; // Use onclick property to overwrite previous if any, safer for re-init
-        }
-
-        if (themeToggleMobile) {
-            themeToggleMobile.onclick = toggleTheme;
-        }
+        // Opcional: si tienes un botón/link "Auto" para seguir sistema:
+        // const themeAuto = document.getElementById('theme-auto');
+        // if (themeAuto) themeAuto.onclick = clearUserThemeOverride;
     };
 
-    // Initialize on load (in case buttons are static)
     document.addEventListener('DOMContentLoaded', window.initThemeToggle);
+
+    // Exponer opcionalmente la función de “volver a automático” por si la necesitas desde fuera
+    window.clearUserThemeOverride = clearUserThemeOverride;
 })();

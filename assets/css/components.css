@@ -1783,3 +1783,44 @@
     color: var(--color-text-secondary);
     margin-bottom: var(--spacing-lg);
 }
+
+/* ============================================
+   HERO FEATURES (Novedad v2.7.7)
+   ============================================ */
+#hero-checklist {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    gap: var(--spacing-lg) !important;
+    margin-top: calc(-1 * var(--spacing-sm)) !important;
+    width: 100% !important;
+}
+
+.hero-features__item {
+    display: flex !important;
+    align-items: center !important;
+    gap: var(--spacing-xs) !important;
+    color: var(--color-text-primary);
+    font-weight: 500;
+    white-space: nowrap !important;
+    width: auto !important;
+    /* Asegurar que no sea 600px */
+}
+
+.hero-features__icon-wrapper {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 1.5rem !important;
+    height: 1.5rem !important;
+    color: var(--color-accent-blue);
+    flex-shrink: 0 !important;
+}
+
+@media (max-width: 767px) {
+    #hero-checklist {
+        justify-content: center !important;
+        gap: var(--spacing-sm) !important;
+    }
+}
