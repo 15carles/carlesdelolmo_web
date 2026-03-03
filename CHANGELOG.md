@@ -2,6 +2,19 @@
 
 Todos los cambios notables en este proyecto serán documentados en este archivo.
 
+## [v2.9.1] - 2026-03-03
+### Añadido
+- **CSS:** Nuevas clases base (`.img--glass`, `.img--hero`, `.img--responsive`) en `components.css` para soportar la futura integración de imágenes reales manteniendo la estética glassmorphism.
+
+## [v2.9.0] - 2026-02-28
+### Añadido
+- **SEO/GEO:** Nueva landing page de servicio local "Diseño web en Valencia" (`diseno-web/diseno-web-valencia.html`).
+- **Contenido:** Implementación de 14 secciones optimizadas siguiendo el perfil de competencia y adaptadas a la autoridad de Carles del Olmo.
+- **Componentes:** Integración de acordeones FAQ interactivos relacionados con servicios locales.
+
+### Cambiado
+- **Documentación:** Sincronización de `sitemap.xml`, `README.md` y `VERSION`.
+
 ## [Cambios Recientes] - 2026-02-24
 ### Añadido
 - **Blog:** Nuevo artículo "El fin del SEO tal como lo conocemos: La era del GEO" (`el-fin-del-seo-la-era-del-geo.html`).

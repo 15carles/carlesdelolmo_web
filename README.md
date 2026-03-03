@@ -26,6 +26,8 @@ carlesdelolmo_web/
 ├── index.html              # Página principal
 ├── pricing.html            # Servicios y tarifas (Diseño Web, SEO, GEO)
 ├── gracias.html            # Página de agradecimiento (Formulario)
+├── diseno-web/              # Landings SEO por ubicación
+│   └── diseno-web-valencia.html
 ├── proyectos/              # Casos de estudio y plantilla
 │   ├── ledescaparate.html
 │   └── plantilla-proyecto.html
@@ -101,6 +103,6 @@ Especialista en Generative Engine Optimization
 
 ---
 
-**Versión**: v2.8.0  
-**Última actualización**: 23 Febrero 2026 (Consolidación de Sistema de Precios y Formulario dinámico con Supabase)
+**Versión**: v2.9.1  
+**Última actualización**: 03 Marzo 2026 (Feature: Clases CSS base para estrategia de imágenes)
 
