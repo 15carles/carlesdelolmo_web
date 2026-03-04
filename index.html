@@ -348,15 +348,12 @@
             <!-- Projects Grid -->
             <div class="grid grid-cols-3">
 
-                <!-- Project 1: TechStore Pro -->
+                <!-- Project 1: LEDescaparate -->
                 <article class="project-card animate-on-scroll">
                     <!-- Project Image -->
                     <div class="project-card__image project-card__image--purple">
-                        <svg class="project-card__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                            aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
-                        </svg>
+                        <img src="/assets/images/muestras/ledescaparate_muestra.webp" alt="Sitio web de LEDescaparate"
+                            loading="lazy">
                     </div>
 
                     <!-- Project Content -->
@@ -365,9 +362,9 @@
 
                         <!-- Badges -->
                         <div class="project-card__badges">
-                            <span class="badge badge--tag badge--teal">GEO</span>
-                            <span class="badge badge--tag badge--blue">Desarrollo Web</span>
-                            <span class="badge badge--tag badge--purple">Automatización</span>
+                            <span class="badge badge--tag badge--teal">SEO</span>
+                            <span class="badge badge--tag badge--blue">GEO</span>
+                            <span class="badge badge--tag badge--purple">Diseño Web</span>
                         </div>
 
                         <!-- Description -->
@@ -599,80 +596,10 @@
                 </p>
             </header>
 
-            <div class="grid grid-cols-2">
-                <!-- Contact Info -->
-                <div class="animate-on-scroll">
-                    <!-- Email -->
-                    <div class="contact-info-card mb-lg">
-                        <div class="contact-info-card__icon-wrapper contact-info-card__icon-wrapper--purple">
-                            <svg class="contact-info-card__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                                aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
-                                </path>
-                            </svg>
-                        </div>
-                        <div>
-                            <h3 class="contact-info-card__title">Email</h3>
-                            <a href="mailto:hola@carlesdelolmo.com"
-                                class="contact-info-card__link">hola@carlesdelolmo.com</a>
-                        </div>
-                    </div>
-
-                    <!-- Location -->
-                    <div class="contact-info-card">
-                        <div class="contact-info-card__icon-wrapper contact-info-card__icon-wrapper--blue">
-                            <svg class="contact-info-card__icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                                aria-hidden="true">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z">
-                                </path>
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                            </svg>
-                        </div>
-                        <div>
-                            <h3 class="contact-info-card__title">Ubicación</h3>
-                            <p class="contact-info-card__content">Valencia - España - Remoto</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="grid">
 
                 <!-- Contact Form -->
-                <form id="contact-form" class="form animate-on-scroll" novalidate>
-                    <!-- Name -->
-                    <div class="form__group">
-                        <label for="nombre" class="form__label">Nombre *</label>
-                        <input type="text" id="nombre" name="nombre" class="form__input"
-                            placeholder="Tu nombre completo" required autocomplete="name">
-                    </div>
-
-                    <!-- Email -->
-                    <div class="form__group">
-                        <label for="email" class="form__label">Email *</label>
-                        <input type="email" id="email" name="email" class="form__input" placeholder="tu@email.com"
-                            required autocomplete="email">
-                    </div>
-
-                    <!-- Company -->
-                    <div class="form__group">
-                        <label for="empresa" class="form__label">Empresa</label>
-                        <input type="text" id="empresa" name="empresa" class="form__input"
-                            placeholder="Nombre de tu empresa" autocomplete="organization">
-                    </div>
-
-                    <!-- Message -->
-                    <div class="form__group">
-                        <label for="mensaje" class="form__label">Mensaje *</label>
-                        <textarea id="mensaje" name="mensaje" class="form__textarea"
-                            placeholder="Cuéntame sobre tu proyecto..." required></textarea>
-                    </div>
-
-                    <!-- Submit Button -->
-                    <button type="submit" class="btn btn--primary btn--large btn--block">
-                        Enviar Mensaje
-                    </button>
-                </form>
+                <div data-component="formulario" class="animate-on-scroll"></div>
             </div>
         </div>
     </section>

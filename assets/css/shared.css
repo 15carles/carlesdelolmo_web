@@ -470,3 +470,15 @@
         width: auto;
     }
 }
+
+/* ============================================
+   UTILIDADES ADICIONALES
+   ============================================ */
+/* Utilidad de lista sin estilos (sin viñetas) */
+.article-content ul.list-unstyled li::before {
+    display: none;
+}
+
+.article-content ul.list-unstyled li {
+    padding-left: 0;
+}

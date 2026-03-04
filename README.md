@@ -24,6 +24,7 @@ Landing page profesional para desarrollador especialista en **Generative Engine 
 ```
 carlesdelolmo_web/
 ├── index.html              # Página principal
+├── contacto.html           # Página de contacto
 ├── pricing.html            # Servicios y tarifas (Diseño Web, SEO, GEO)
 ├── gracias.html            # Página de agradecimiento (Formulario)
 ├── diseno-web/              # Landings SEO por ubicación
@@ -104,5 +105,4 @@ Especialista en Generative Engine Optimization
 ---
 
 **Versión**: v2.9.1  
-**Última actualización**: 03 Marzo 2026 (Feature: Clases CSS base para estrategia de imágenes)
-
+**Última actualización**: 04 Marzo 2026 (Feature/Fix: Integración de formulario dinámico, reajustes visuales y mejoras UI)

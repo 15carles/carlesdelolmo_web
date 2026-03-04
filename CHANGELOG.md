@@ -2,9 +2,16 @@
 
 Todos los cambios notables en este proyecto serán documentados en este archivo.
 
-## [v2.9.1] - 2026-03-03
+## [v2.9.1] - 2026-03-04
 ### Añadido
-- **CSS:** Nuevas clases base (`.img--glass`, `.img--hero`, `.img--responsive`) en `components.css` para soportar la futura integración de imágenes reales manteniendo la estética glassmorphism.
+- **Contacto:** Integración de nuevo formulario de contacto modular (`formulario.html`) en la página principal (`index.html`) y en la nueva página dedicada (`contacto.html`).
+- **UI:** Rediseño de las etiquetas "Keywords Cloud" con estética glassmorphism premium.
+- **Iconos:** Mejoras en SVG de Autoridad y Seguridad adaptando trazos y layout general al ecosistema de la marca.
+
+### Corregido
+- **UI:** Estandarización de las dimensiones de logos de herramientas en tarjetas usando contenedores fijos y `object-fit: contain`.
+- **UI/UX:** Solucionado el problema de parpadeo (flicker) en elementos con animaciones de scroll al entrar en la pantalla (`.animate-on-scroll`, `.animate-fade-in-up`).
+- **UX:** Eliminado el desbordamiento horizontal (scrollbars no deseadas) en vista móvil de la landing "Diseño web en Valencia" y otras áreas.
 
 ## [v2.9.0] - 2026-02-28
 ### Añadido
