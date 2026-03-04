@@ -104,5 +104,5 @@ Especialista en Generative Engine Optimization
 
 ---
 
-**Versión**: v2.9.1  
-**Última actualización**: 04 Marzo 2026 (Feature/Fix: Integración de formulario dinámico, reajustes visuales y mejoras UI)
+**Versión**: v2.9.2  
+**Última actualización**: 05 Marzo 2026 (Feature/Fix: Corrección del ancho completo del navbar en dispositivos móviles y limpieza estructural)

@@ -9,6 +9,11 @@
 .navbar {
     position: sticky;
     top: 0;
+    left: 0;
+    right: 0;
+    width: 100% !important;
+    min-width: 100vw !important;
+    /* v2.9.2: Forzar ancho de viewport */
     z-index: 1000;
     backdrop-filter: blur(var(--blur-md));
     background-color: var(--color-bg-card);
@@ -20,13 +25,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    justify-content: space-between;
     height: 4rem;
-    /* Cambio v2.7.3: Unificar padding con .container (16px en móvil) */
     padding: 0 var(--spacing-sm);
-    /* Cambio v2.7.4: Asegurar ancho completo en móvil */
     width: 100%;
+    max-width: 100%;
     margin: 0 auto;
+    position: relative;
 }
 
 .navbar__logo {
@@ -109,6 +113,195 @@
     .navbar__mobile-menu {
         display: none !important;
     }
+
+    /* ============================================
+       DROPDOWNS DESKTOP (1024px+)
+       ============================================ */
+    .dropdown {
+        position: relative;
+    }
+
+    .dropdown__toggle {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        font-family: inherit;
+        font-size: inherit;
+        font-weight: inherit;
+    }
+
+    .dropdown__arrow {
+        transition: transform var(--transition-normal);
+    }
+
+    .dropdown.is-active>.dropdown__toggle .dropdown__arrow {
+        transform: rotate(180deg);
+    }
+
+    .dropdown__menu {
+        position: absolute;
+        top: calc(100% + 1rem);
+        left: 0;
+        min-width: 260px;
+        background: var(--color-bg-card);
+        backdrop-filter: blur(var(--blur-lg));
+        -webkit-backdrop-filter: blur(var(--blur-lg));
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-md);
+        box-shadow: var(--shadow-lg);
+        padding: var(--spacing-xs) 0;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(10px);
+        transition: all var(--transition-normal);
+        z-index: 100;
+    }
+
+    .dropdown.is-active>.dropdown__menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .dropdown__item {
+        position: relative;
+    }
+
+    .dropdown__link,
+    .dropdown__sublink {
+        display: block;
+        padding: 0.75rem 1.25rem;
+        color: var(--color-text-secondary);
+        font-size: 0.9375rem;
+        transition: all var(--transition-fast);
+        border: none;
+        background: none;
+        width: 100%;
+        text-align: left;
+        cursor: pointer;
+        font-family: inherit;
+    }
+
+    .dropdown__link:hover,
+    .dropdown__sublink:hover {
+        background: rgba(102, 126, 234, 0.1);
+        color: var(--color-text-primary);
+        padding-left: 1.5rem;
+    }
+
+    /* Submenús Desktop (Flyouts) */
+    .dropdown__toggle-sub {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+
+    .dropdown__submenu {
+        position: absolute;
+        top: 0;
+        left: 100%;
+        min-width: 240px;
+        background: var(--color-bg-card);
+        backdrop-filter: blur(var(--blur-lg));
+        -webkit-backdrop-filter: blur(var(--blur-lg));
+        border: 1px solid var(--color-border);
+        border-radius: var(--radius-md);
+        box-shadow: var(--shadow-lg);
+        padding: var(--spacing-xs) 0;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(10px);
+        transition: all var(--transition-normal);
+        margin-left: 0.5rem;
+    }
+
+    .dropdown__item.is-active>.dropdown__submenu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0);
+    }
+}
+
+/* ============================================
+   MOBILE DROPDOWNS (Acordeón)
+   ============================================ */
+.mobile-dropdown {
+    width: 100%;
+}
+
+.mobile-dropdown__toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: var(--spacing-xs) 0;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.mobile-dropdown__menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height var(--transition-normal) ease-out;
+    padding-left: var(--spacing-md);
+    display: flex;
+    flex-direction: column;
+}
+
+.mobile-dropdown.is-active>.mobile-dropdown__menu {
+    max-height: 500px;
+    /* Ajustar según contenido */
+}
+
+.mobile-dropdown.is-active>.mobile-dropdown__toggle .dropdown__arrow {
+    transform: rotate(180deg);
+}
+
+.mobile-dropdown__sublink,
+.mobile-dropdown__sublink-final {
+    display: block;
+    padding: var(--spacing-xs) 0;
+    color: var(--color-text-secondary);
+    font-size: 0.9375rem;
+    transition: color var(--transition-fast);
+}
+
+.mobile-dropdown__toggle-sub {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: none;
+    border: none;
+    font-family: inherit;
+    text-align: left;
+    cursor: pointer;
+}
+
+.mobile-dropdown__submenu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height var(--transition-normal) ease-out;
+    padding-left: var(--spacing-md);
+    border-left: 1px solid var(--color-border);
+    margin-left: 0.25rem;
+}
+
+.mobile-dropdown__item.is-active>.mobile-dropdown__submenu {
+    max-height: 300px;
+}
+
+.mobile-dropdown__item.is-active>.mobile-dropdown__toggle-sub .dropdown__arrow {
+    transform: rotate(180deg);
 }
 
 /* ============================================

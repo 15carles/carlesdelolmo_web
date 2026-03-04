@@ -10,8 +10,10 @@ Todos los cambios notables en este proyecto serán documentados en este archivo.
 
 ### Corregido
 - **UI:** Estandarización de las dimensiones de logos de herramientas en tarjetas usando contenedores fijos y `object-fit: contain`.
+Solucionado el problema de ancho insuficiente del navbar en dispositivos móviles. Ahora el fondo se extiende al 100% del viewport (`100vw`) y se han eliminado redundancias estructurales en `navbar.html`.
 - **UI/UX:** Solucionado el problema de parpadeo (flicker) en elementos con animaciones de scroll al entrar en la pantalla (`.animate-on-scroll`, `.animate-fade-in-up`).
 - **UX:** Eliminado el desbordamiento horizontal (scrollbars no deseadas) en vista móvil de la landing "Diseño web en Valencia" y otras áreas.
+- **CSS:** Refuerzo del reseteo de márgenes globales en `body` y `html` para garantizar consistencia en todos los navegadores móviles.
 
 ## [v2.9.0] - 2026-02-28
 ### Añadido
