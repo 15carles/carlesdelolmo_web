@@ -1596,7 +1596,7 @@
     /* Posición pegajosa bajo la navbar (4rem altura navbar móvil) */
     position: sticky;
     top: 4rem;
-    z-index: 900;
+    z-index: 990;
     background: var(--color-bg-card);
     backdrop-filter: blur(var(--blur-md));
     border-bottom: 1px solid var(--color-border);

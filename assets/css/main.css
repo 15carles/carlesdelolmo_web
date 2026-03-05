@@ -133,7 +133,9 @@ html {
     margin: 0;
     padding: 0;
     width: 100%;
-    overflow-x: hidden;
+    overflow-x: clip;
+    /* Fase 1: Compensación de navbar fixed para anclas */
+    scroll-padding-top: 5rem;
 }
 
 body {
@@ -141,7 +143,7 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
-    overflow-x: hidden;
+    overflow-x: clip;
     background-image:
         var(--svg-wave-1),
         var(--svg-wave-2),
@@ -158,7 +160,7 @@ body {
     animation: floating-waves 20s ease-in-out infinite;
     transition: background-color 0.3s ease, color 0.3s ease;
     /* Fix: Prevenir scroll horizontal global */
-    overflow-x: hidden;
+    overflow-x: clip;
     width: 100%;
 }
 
@@ -214,6 +216,17 @@ a {
 
 .section {
     padding: var(--spacing-xl) 0;
+}
+
+/* Compensación para la primera sección tras el navbar fixed */
+#inicio.section {
+    padding-top: calc(var(--spacing-xl) + 4rem);
+}
+
+@media (min-width: 1024px) {
+    #inicio.section {
+        padding-top: calc(var(--spacing-xl) + 5rem);
+    }
 }
 
 /* ============================================

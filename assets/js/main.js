@@ -88,7 +88,9 @@ const SmoothScroll = {
         if (target) {
             e.preventDefault();
 
-            const navbarHeight = document.querySelector('.navbar')?.offsetHeight || 0;
+            // Fase 2: Cálculo preciso de altura del navbar (desktop vs móvil)
+            const navbar = document.querySelector('.navbar');
+            const navbarHeight = navbar ? navbar.getBoundingClientRect().height : 0;
             const targetPosition = target.offsetTop - navbarHeight;
 
             window.scrollTo({
