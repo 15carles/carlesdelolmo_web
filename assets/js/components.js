@@ -92,6 +92,22 @@
                     }
                 }
 
+                // 3. Lógica para Footer
+                if (componentName === 'footer') {
+                    if (window.CookieManager) {
+                        window.CookieManager.setupFooterListener();
+                    }
+                }
+
+                // 4. Lógica para Cookie Banner
+                if (componentName === 'cookie-banner') {
+                    if (window.CookieManager) {
+                        window.CookieManager.init();
+                    } else {
+                        console.warn('CookieManager logic not found.');
+                    }
+                }
+
             } else {
                 console.warn(`Target element not found: ${targetSelector}`);
             }
@@ -117,6 +133,11 @@
         // Load formulario (Nuevo)
         if (document.querySelector('[data-component="formulario"]')) {
             loadComponent('formulario', '[data-component="formulario"]');
+        }
+
+        // Load cookie-banner
+        if (document.querySelector('[data-component="cookie-banner"]')) {
+            loadComponent('cookie-banner', '[data-component="cookie-banner"]');
         }
     });
 })();

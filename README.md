@@ -26,6 +26,7 @@ carlesdelolmo_web/
 ├── index.html              # Página principal
 ├── contacto.html           # Página de contacto
 ├── pricing.html            # Servicios y tarifas (Diseño Web, SEO, GEO)
+├── politica-cookies.html   # Política de Cookies (Legal)
 ├── gracias.html            # Página de agradecimiento (Formulario)
 ├── diseno-web/              # Landings SEO por ubicación
 │   └── diseno-web-valencia.html
@@ -104,5 +105,5 @@ Especialista en Generative Engine Optimization
 
 ---
 
-**Versión**: v2.9.2  
-**Última actualización**: 05 Marzo 2026 (Feature/Fix: Corrección del ancho completo del navbar en dispositivos móviles y limpieza estructural)
+**Versión**: v2.9.3  
+**Última actualización**: 08 Marzo 2026 (Feat: Implementación de la página de Política de Cookies con diseño premium e integración global)

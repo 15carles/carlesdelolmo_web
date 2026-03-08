@@ -5,6 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Google Consent Mode v2 (Initial State) -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+
+        // Inicializar consentimiento denegado por defecto (EU 2026)
+        gtag('consent', 'default', {
+            'analytics_storage': 'denied',
+            'ad_storage': 'denied',
+            'ad_user_data': 'denied',
+            'ad_personalization': 'denied',
+            'wait_for_update': 500
+        });
+
+        // Guardar configuración inicial en dataLayer
+        window.dataLayer.push({
+            'event': 'default_consent'
+        });
+    </script>
+
     <!-- SEO Meta Tags -->
     <title>Diseño web en Valencia | Carles del Olmo - SEO y GEO</title>
     <meta name="description"
@@ -607,10 +627,24 @@
     <!-- FOOTER (Loaded dynamically) -->
     <div data-component="footer"></div>
 
+    <!-- COOKIE BANNER (Loaded dynamically) -->
+    <div data-component="cookie-banner"></div>
+
     <!-- Scripts -->
     <script src="assets/js/components.js"></script>
+    <script src="assets/js/cookie-manager.js"></script>
     <script src="assets/js/theme-toggle.js"></script>
     <script src="assets/js/main.js"></script>
+
+    <!-- Google Analytics 4 (GA4) - Cargado tras el Consent Mode -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-196PEE2941"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-196PEE2941', { 'anonymize_ip': true });
+    </script>
+
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="assets/js/form.js"></script>
 

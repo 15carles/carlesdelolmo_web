@@ -2,6 +2,15 @@
 
 Todos los cambios notables en este proyecto serán documentados en este archivo.
 
+## [v2.9.3] - 2026-03-08
+### Añadido
+- **Legal:** Implementación integral de la página de Política de Cookies (`politica-cookies.html`) con diseño premium, integración de componentes globales (Navbar/Footer) y cumplimiento de Consent Mode v2.
+- **Sitemap:** Inclusión automática de la nueva página legal en el mapa del sitio.
+
+### Cambiado
+- **SEO:** Optimización de metadatos y conversión a URLs limpias (eliminación de `.html` en canonical y OG Tags) en la página de política de cookies.
+- **UI:** Aplicación de arquitectura visual coherente utilizando clases de `shared.css` y `components.css`.
+
 ## [v2.9.1] - 2026-03-04
 ### Añadido
 - **Contacto:** Integración de nuevo formulario de contacto modular (`formulario.html`) en la página principal (`index.html`) y en la nueva página dedicada (`contacto.html`).
