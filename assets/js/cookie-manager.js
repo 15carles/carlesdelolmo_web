@@ -25,6 +25,9 @@ const CookieManager = {
         // Botones del Modal
         document.getElementById('btn-close-modal')?.addEventListener('click', () => this.toggleModal(false));
         document.getElementById('btn-save-settings')?.addEventListener('click', () => this.saveCustomSettings());
+
+        // Cerrar modal al hacer clic en el overlay
+        document.querySelector('.cookie-modal__overlay')?.addEventListener('click', () => this.toggleModal(false));
         
         // Vincular footer si ya existe
         this.setupFooterListener();
@@ -37,27 +40,41 @@ const CookieManager = {
                 e.preventDefault();
                 this.toggleModal(true);
             });
-            console.log('Cookie footer listener attached');
+        }
+
+        // Vincular enlace de la página de política de cookies
+        const pageLink = document.getElementById('open-cookie-settings-page');
+        if (pageLink) {
+            pageLink.addEventListener('click', (e) => {
+                e.preventDefault();
+                this.toggleModal(true);
+            });
         }
     },
 
     checkExistingConsent() {
         const savedConsent = localStorage.getItem(this.STORAGE_KEY);
         if (savedConsent) {
-            const consent = JSON.parse(savedConsent);
-            this.updateGCM(consent);
-            this.hideBanner();
+            try {
+                const consent = JSON.parse(savedConsent);
+                this.updateGCM(consent);
+                this.hideBanner();
+            } catch (e) {
+                // Si el valor está corrupto, limpiar y mostrar el banner
+                localStorage.removeItem(this.STORAGE_KEY);
+                this.showBanner();
+            }
         } else {
             this.showBanner();
         }
     },
 
     showBanner() {
-        if (this.banner) this.banner.style.display = 'block';
+        if (this.banner) this.banner.classList.add('is-visible');
     },
 
     hideBanner() {
-        if (this.banner) this.banner.style.display = 'none';
+        if (this.banner) this.banner.classList.remove('is-visible');
     },
 
     toggleModal(show) {
@@ -66,14 +83,20 @@ const CookieManager = {
                 // Sincronizar checkboxes con el consentimiento actual al abrir
                 const savedConsent = localStorage.getItem(this.STORAGE_KEY);
                 if (savedConsent) {
-                    const consent = JSON.parse(savedConsent);
-                    const analyticsInput = document.getElementById('cookie-analytics');
-                    if (analyticsInput) {
-                        analyticsInput.checked = (consent.analytics_storage === 'granted');
+                    try {
+                        const consent = JSON.parse(savedConsent);
+                        const analyticsInput = document.getElementById('cookie-analytics');
+                        if (analyticsInput) {
+                            analyticsInput.checked = (consent.analytics_storage === 'granted');
+                        }
+                    } catch (e) {
+                        // Si está corrupto, resetear checkbox
+                        const analyticsInput = document.getElementById('cookie-analytics');
+                        if (analyticsInput) analyticsInput.checked = false;
                     }
                 }
             }
-            this.modal.style.display = show ? 'flex' : 'none';
+            this.modal.classList.toggle('is-visible', show);
             this.modal.setAttribute('aria-hidden', !show);
         }
     },
@@ -129,9 +152,6 @@ const CookieManager = {
                 'ad_user_data': consent.ad_user_data,
                 'ad_personalization': consent.ad_personalization
             });
-            console.log('GCM v2 Updated:', consent);
-        } else {
-            console.warn('gtag is not defined. Consent update skipped.');
         }
     }
 };
