@@ -62,6 +62,17 @@ const CookieManager = {
 
     toggleModal(show) {
         if (this.modal) {
+            if (show) {
+                // Sincronizar checkboxes con el consentimiento actual al abrir
+                const savedConsent = localStorage.getItem(this.STORAGE_KEY);
+                if (savedConsent) {
+                    const consent = JSON.parse(savedConsent);
+                    const analyticsInput = document.getElementById('cookie-analytics');
+                    if (analyticsInput) {
+                        analyticsInput.checked = (consent.analytics_storage === 'granted');
+                    }
+                }
+            }
             this.modal.style.display = show ? 'flex' : 'none';
             this.modal.setAttribute('aria-hidden', !show);
         }
@@ -90,7 +101,9 @@ const CookieManager = {
     },
 
     saveCustomSettings() {
-        const analytics = document.getElementById('cookie-analytics').checked;
+        const analyticsInput = document.getElementById('cookie-analytics');
+        const analytics = analyticsInput ? analyticsInput.checked : false;
+        
         const consent = {
             analytics_storage: analytics ? 'granted' : 'denied',
             ad_storage: 'denied', // Por defecto denegamos marketing ya que el sitio es de servicios
@@ -117,6 +130,8 @@ const CookieManager = {
                 'ad_personalization': consent.ad_personalization
             });
             console.log('GCM v2 Updated:', consent);
+        } else {
+            console.warn('gtag is not defined. Consent update skipped.');
         }
     }
 };
